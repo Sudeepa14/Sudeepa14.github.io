@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags | Sudeepa Nadeeshan</title>
+    <link>/tags/</link>
+      <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Tags</title>
+      <link>/tags/</link>
+    </image>
+    
+    <item>
+      <title>data collection tool</title>
+      <link>/tags/data-collection-tool/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/data-collection-tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data corpus</title>
+      <link>/tags/data-corpus/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/data-corpus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>low resourced languages</title>
+      <link>/tags/low-resourced-languages/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/low-resourced-languages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NLP</title>
+      <link>/tags/nlp/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/nlp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Academic</title>
+      <link>/tags/academic/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/academic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BD</title>
+      <link>/tags/bd/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/bd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ciperlabs</title>
+      <link>/tags/ciperlabs/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/ciperlabs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Consultant</title>
+      <link>/tags/consultant/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/consultant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>/tags/deep-learning/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RnD</title>
+      <link>/tags/rnd/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/rnd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SE</title>
+      <link>/tags/se/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/se/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tachyon</title>
+      <link>/tags/tachyon/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/tachyon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Feed Forward Neural Network</title>
+      <link>/tags/feed-forward-neural-network/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>/tags/feed-forward-neural-network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sinhala Speech Recognition</title>
+      <link>/tags/sinhala-speech-recognition/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>/tags/sinhala-speech-recognition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Speech recognition</title>
+      <link>/tags/speech-recognition/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>/tags/speech-recognition/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

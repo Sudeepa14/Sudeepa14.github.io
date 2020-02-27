@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RnD | Sudeepa Nadeeshan</title>
+    <link>/tags/rnd/</link>
+      <atom:link href="/tags/rnd/index.xml" rel="self" type="application/rss+xml" />
+    <description>RnD</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>RnD</title>
+      <link>/tags/rnd/</link>
+    </image>
+    
+    <item>
+      <title>Domain specific intent classification system ...</title>
+      <link>/project/fyp/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/fyp/</guid>
+      <description>&lt;p&gt;A neural network based intent classification system for a specific domain that has the capability to identify the intent of an uttered command in Sinhala language without converting to text. Two research papers were submitted. A mobile web app was developed for collecting voice samples.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Travel Behaviour Analytics for Public Transportation Services</title>
+      <link>/project/transport/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/transport/</guid>
+      <description>&lt;p&gt;This application was built for Natural Language Processing Centre of University of Moratuwa. The client had a very large data corpus and there were some erroneous tags for the words. A tag is basically the type of the word like abbreviation, full stop, adjectival noun, postpositions, pronouns etc (There are around 30 tags). It was required to change the tag according to the position of the word in a single sentence or change the tag of the selected word for the whole corpus. Usability and consistency were the main considerations of the application. So different methods were added to search the content like searching by word and searching by tag. The editor can be configured to and corpus with the same corpus conventions and the changes are consistently saved in the file system.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Domain Specific Intent Classification of Sinhala Speech Data</title>
+      <link>/publication/domainspecific/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/domainspecific/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
