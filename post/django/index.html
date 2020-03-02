@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Sudeepa Nadeeshan">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Django">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/django/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/django/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Sudeepa Nadeeshan">
+  <meta property="og:url" content="/post/django/">
+  <meta property="og:title" content="Face Detection, Video Streaming with Python, OpenCV, Django – Part 1 | Sudeepa Nadeeshan">
+  <meta property="og:description" content="Django"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2017-08-26T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2017-08-26T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/django/"
+  },
+  "headline": "Face Detection, Video Streaming with Python, OpenCV, Django – Part 1",
+  
+  "datePublished": "2017-08-26T00:00:00Z",
+  "dateModified": "2017-08-26T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Sudeepa Nadeeshan"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sudeepa Nadeeshan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/img/icon-512.png"
+    }
+  },
+  "description": "Django"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Face Detection, Video Streaming with Python, OpenCV, Django – Part 1 | Sudeepa Nadeeshan</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Sudeepa Nadeeshan</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Face Detection, Video Streaming with Python, OpenCV, Django – Part 1</h1>
+
+  
+  <p class="page-subtitle">Django, Python</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/admin/">Sudeepa Nadeeshan</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Aug 26, 2017
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/demo/">Demo</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+<p><strong><span style="color: red;">(Note:- The post was migrated from the previous blog written on 26th August 2017 <a href="https://web.archive.org/web/20181206200514/http://sudeepanadeeshan.me/2017/08/hello-world" target="_blank">web.arvhive.org</a>). That was a lossy migration and the images were not be able to recover using webarchive.  See what happend to the previous <a href="http://localhost:1313/post/what_happend_to_previous_blog/" target="_blank">blog</a></strong></span></p>
+
+<p>Hi folks. I got to dive into a totally different Library last week. It is non other than OpenCV . While I was working as an intern at interblocks one of my tech leads said he never tried to stream a video between two machines, Actually he wanted to transfer the stream only when someone is in front of the computer. It is not a work relate one, but just a random idea. So I wanted to give it a try. Here is the basic diagram.</p>
+
+<p>As the Face Detector and End User are talking using REST API I thought to use Django as the web frame work and openCV as the face detection library. I’ve never used both of them before. So I decided to go with those as a learning task.</p>
+
+<p>Django is a high-level Python Web framework. This is the basic setup for a app in Django. I followed the <a href="https://docs.djangoproject.com/en/2.0/intro/tutorial01/" target="_blank">official documentation</a> . Here is a highlight of it.</p>
+
+<h1 id="install-python">Install Python.</h1>
+
+<h2 id="install-a-python-virtual-environment">Install a Python Virtual Environment.</h2>
+
+<h3 id="to-install-the-package-manager">To install the package manager</h3>
+
+<p>Download <a href="https://bootstrap.pypa.io/get-pip.py" target="_blank">get-pip.py</a></p>
+
+<p>Go to folder containing get-pip.py and run</p>
+
+<pre><code class="language-python">python get-pip.py
+</code></pre>
+
+<h3 id="installing-the-virtual-environment">Installing the virtual environment</h3>
+
+<pre><code class="language-python">pip install virtualen
+</code></pre>
+
+<p>What virtual environment do is it create a virtual system which is almost like the normal system and it  prevents any harm that could be caused because of the programme development  The virtual                 environment. Here you can find an explanation about the importance of the virtual environment very clearly, just have a look at <a href="https://stackoverflow.com/questions/39055728/importance-of-virtual-environment-setup-for-django-with-python/39055882#39055882" target="_blank">it</a>.</p>
+
+<h3 id="creating-the-project-folder">Creating the Project Folder</h3>
+
+<pre><code class="language-python">mkdir env
+</code></pre>
+
+<h3 id="go-to-the-folder-and-create-a-new-project">Go to the folder and create a new project</h3>
+
+<pre><code class="language-python">cd env
+Virtualenv mysite
+</code></pre>
+
+<h3 id="active-the-newly-created-environment">Active the newly created environment</h3>
+
+<pre><code class="language-python">cd env\mysite\scripts\activate
+</code></pre>
+
+<p>This will change the command line as follows.</p>
+
+<pre><code class="language-python">(env)C:\Users\username\Documents\mysite&gt;
+</code></pre>
+
+<p>Now the environment is up and running we can develop ord project on top of that</p>
+
+<h2 id="install-django">Install Django.</h2>
+
+<p>This will install the latest version of django and you can specify the version by,</p>
+
+<pre><code class="language-python">pip install django==x.y.z
+</code></pre>
+
+<p>You can cross check the installation by running the python interpreter here and checking the python version here.</p>
+
+<pre><code class="language-python">&gt;&gt;&gt;Python
+&gt;&gt;&gt;Import Django dJ
+&gt;&gt;&gt;DJ.get_version()
+</code></pre>
+
+<p>Back to the topic. Now we have to starting a new Project. A project can hold multiple apps FYI 😀</p>
+
+<pre><code class="language-python">django-admin startproject mysite
+</code></pre>
+
+<p>This will automatically create  a new folder with the following structure.</p>
+
+<pre><code class="language-python">mysite/
+  manage.py 
+  mysite/
+    __init__.py 
+    settings.py 
+    urls.py 
+    wsgi.py
+</code></pre>
+
+<p>As Django automatically creates some applications by defaults like Admin Programme , User Management , Authentication we have to set up a database in order to work with them.</p>
+
+<p>Direct to mysite. And run</p>
+
+<pre><code class="language-python">python manage.py migrate
+</code></pre>
+
+<p>again to make sure that you are in the newly created project folder. In  “mysite” you can easily use CD command (in case you are confused with the running environment).</p>
+
+<p>All set!!! Now you can run the server you just created.</p>
+
+<pre><code class="language-python">python manage.py runserver
+</code></pre>
+
+<p>If you want to change the server,</p>
+
+<pre><code class="language-python">python manage.py runserver 8080
+</code></pre>
+
+<p>If you have done everything right it will look like</p>
+
+<h2 id="creating-your-first-app">Creating your first app.</h2>
+
+<p>Go to the project directory where your manage.py is and run the following command.</p>
+
+<pre><code class="language-python">python manage.py startapp myfirstapp
+</code></pre>
+
+<h3 id="testing-the-app">Testing the app</h3>
+
+<p>As the django <a href="https://docs.djangoproject.com/en/2.0/intro/tutorial01/" target="_blank">Doc</a> says,</p>
+
+<p>In views.py</p>
+
+<pre><code class="language-python">from django.http import HttpResponse
+def index(request):
+    return HttpResponse(&quot;Hello, world. You're at the polls index.&quot;)
+</code></pre>
+
+<p>And in url.py</p>
+
+<pre><code class="language-python">from django.conf.urls import url
+</code></pre>
+
+<p>Then go back to the the project (mysite ) in this case, /mysite/urls.py</p>
+
+<pre><code class="language-python">from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r'^myfirstapp/', include('myfirstapp.urls')),
+    url(r'^admin/', admin.site.urls),
+]
+</code></pre>
+
+<p>This is the very basic set up of a Django app. I will share the web app for the solution using Django in the next post.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/codes-demo/">Codes Demo</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/django/&amp;text=Face%20Detection,%20Video%20Streaming%20with%20Python,%20OpenCV,%20Django%20%e2%80%93%20Part%201" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/django/&amp;t=Face%20Detection,%20Video%20Streaming%20with%20Python,%20OpenCV,%20Django%20%e2%80%93%20Part%201" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Face%20Detection,%20Video%20Streaming%20with%20Python,%20OpenCV,%20Django%20%e2%80%93%20Part%201&amp;body=/post/django/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/django/&amp;title=Face%20Detection,%20Video%20Streaming%20with%20Python,%20OpenCV,%20Django%20%e2%80%93%20Part%201" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Face%20Detection,%20Video%20Streaming%20with%20Python,%20OpenCV,%20Django%20%e2%80%93%20Part%201%20/post/django/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/django/&amp;title=Face%20Detection,%20Video%20Streaming%20with%20Python,%20OpenCV,%20Django%20%e2%80%93%20Part%201" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hua852e7de9ce19e57f340783599f49404_41092_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Sudeepa Nadeeshan</a></h5>
+      <h6 class="card-subtitle">Research Assistant</h6>
+      <p class="card-text">My research interests include Intelligent Transport Systems, Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/IAm_Sudeepa" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/sudeepa14" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=NTbUVMUAAAAJ&amp;hl=en#d=gs_hdr_drw" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

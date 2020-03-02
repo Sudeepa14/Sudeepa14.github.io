@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Codes Demo | Sudeepa Nadeeshan</title>
+    <link>/tags/codes-demo/</link>
+      <atom:link href="/tags/codes-demo/index.xml" rel="self" type="application/rss+xml" />
+    <description>Codes Demo</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 26 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Codes Demo</title>
+      <link>/tags/codes-demo/</link>
+    </image>
+    
+    <item>
+      <title>Face Detection, Video Streaming with Python, OpenCV, Django – Part 1</title>
+      <link>/post/django/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/post/django/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;color: red;&#34;&gt;(Note:- The post was migrated from the previous blog written on 26th August 2017 &lt;a href=&#34;https://web.archive.org/web/20181206200514/http://sudeepanadeeshan.me/2017/08/hello-world&#34; target=&#34;_blank&#34;&gt;web.arvhive.org&lt;/a&gt;). That was a lossy migration and the images were not be able to recover using webarchive.  See what happend to the previous &lt;a href=&#34;http://localhost:1313/post/what_happend_to_previous_blog/&#34; target=&#34;_blank&#34;&gt;blog&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Hi folks. I got to dive into a totally different Library last week. It is non other than OpenCV . While I was working as an intern at interblocks one of my tech leads said he never tried to stream a video between two machines, Actually he wanted to transfer the stream only when someone is in front of the computer. It is not a work relate one, but just a random idea. So I wanted to give it a try. Here is the basic diagram.&lt;/p&gt;
+
+&lt;p&gt;As the Face Detector and End User are talking using REST API I thought to use Django as the web frame work and openCV as the face detection library. I’ve never used both of them before. So I decided to go with those as a learning task.&lt;/p&gt;
+
+&lt;p&gt;Django is a high-level Python Web framework. This is the basic setup for a app in Django. I followed the &lt;a href=&#34;https://docs.djangoproject.com/en/2.0/intro/tutorial01/&#34; target=&#34;_blank&#34;&gt;official documentation&lt;/a&gt; . Here is a highlight of it.&lt;/p&gt;
+
+&lt;h1 id=&#34;install-python&#34;&gt;Install Python.&lt;/h1&gt;
+
+&lt;h2 id=&#34;install-a-python-virtual-environment&#34;&gt;Install a Python Virtual Environment.&lt;/h2&gt;
+
+&lt;h3 id=&#34;to-install-the-package-manager&#34;&gt;To install the package manager&lt;/h3&gt;
+
+&lt;p&gt;Download &lt;a href=&#34;https://bootstrap.pypa.io/get-pip.py&#34; target=&#34;_blank&#34;&gt;get-pip.py&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Go to folder containing get-pip.py and run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;python get-pip.py
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;installing-the-virtual-environment&#34;&gt;Installing the virtual environment&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;pip install virtualen
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What virtual environment do is it create a virtual system which is almost like the normal system and it  prevents any harm that could be caused because of the programme development  The virtual                 environment. Here you can find an explanation about the importance of the virtual environment very clearly, just have a look at &lt;a href=&#34;https://stackoverflow.com/questions/39055728/importance-of-virtual-environment-setup-for-django-with-python/39055882#39055882&#34; target=&#34;_blank&#34;&gt;it&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-the-project-folder&#34;&gt;Creating the Project Folder&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;mkdir env
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;go-to-the-folder-and-create-a-new-project&#34;&gt;Go to the folder and create a new project&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;cd env
+Virtualenv mysite
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;active-the-newly-created-environment&#34;&gt;Active the newly created environment&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;cd env\mysite\scripts\activate
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will change the command line as follows.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;(env)C:\Users\username\Documents\mysite&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now the environment is up and running we can develop ord project on top of that&lt;/p&gt;
+
+&lt;h2 id=&#34;install-django&#34;&gt;Install Django.&lt;/h2&gt;
+
+&lt;p&gt;This will install the latest version of django and you can specify the version by,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;pip install django==x.y.z
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can cross check the installation by running the python interpreter here and checking the python version here.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt;Python
+&amp;gt;&amp;gt;&amp;gt;Import Django dJ
+&amp;gt;&amp;gt;&amp;gt;DJ.get_version()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Back to the topic. Now we have to starting a new Project. A project can hold multiple apps FYI 😀&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;django-admin startproject mysite
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will automatically create  a new folder with the following structure.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;mysite/
+  manage.py 
+  mysite/
+    __init__.py 
+    settings.py 
+    urls.py 
+    wsgi.py
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As Django automatically creates some applications by defaults like Admin Programme , User Management , Authentication we have to set up a database in order to work with them.&lt;/p&gt;
+
+&lt;p&gt;Direct to mysite. And run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;python manage.py migrate
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;again to make sure that you are in the newly created project folder. In  “mysite” you can easily use CD command (in case you are confused with the running environment).&lt;/p&gt;
+
+&lt;p&gt;All set!!! Now you can run the server you just created.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;python manage.py runserver
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you want to change the server,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;python manage.py runserver 8080
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you have done everything right it will look like&lt;/p&gt;
+
+&lt;h2 id=&#34;creating-your-first-app&#34;&gt;Creating your first app.&lt;/h2&gt;
+
+&lt;p&gt;Go to the project directory where your manage.py is and run the following command.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;python manage.py startapp myfirstapp
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;testing-the-app&#34;&gt;Testing the app&lt;/h3&gt;
+
+&lt;p&gt;As the django &lt;a href=&#34;https://docs.djangoproject.com/en/2.0/intro/tutorial01/&#34; target=&#34;_blank&#34;&gt;Doc&lt;/a&gt; says,&lt;/p&gt;
+
+&lt;p&gt;In views.py&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from django.http import HttpResponse
+def index(request):
+    return HttpResponse(&amp;quot;Hello, world. You&#39;re at the polls index.&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And in url.py&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from django.conf.urls import url
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then go back to the the project (mysite ) in this case, /mysite/urls.py&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r&#39;^myfirstapp/&#39;, include(&#39;myfirstapp.urls&#39;)),
+    url(r&#39;^admin/&#39;, admin.site.urls),
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is the very basic set up of a Django app. I will share the web app for the solution using Django in the next post.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

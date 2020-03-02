@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS Labda, Heroku | Sudeepa Nadeeshan</title>
+    <link>/tags/aws-labda-heroku/</link>
+      <atom:link href="/tags/aws-labda-heroku/index.xml" rel="self" type="application/rss+xml" />
+    <description>AWS Labda, Heroku</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>AWS Labda, Heroku</title>
+      <link>/tags/aws-labda-heroku/</link>
+    </image>
+    
+    <item>
+      <title>Keeping Free Heroku app awake for all the time</title>
+      <link>/post/lambda/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/post/lambda/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;color: red;&#34;&gt;(Note:- The post was migrated from the previous blog written on 17th March 2018 &lt;a href=&#34;https://web.archive.org/web/20181116085144/http://sudeepanadeeshan.me/2018/03/continuous-integration-and-deploying-with-github-webhooks&#34; target=&#34;_blank&#34;&gt;web.arvhive.org&lt;/a&gt;)  That was a lossy migration and the images were not be able to recover using webarchive. See what happend to the previous &lt;a href=&#34;http://localhost:1313/post/what_happend_to_previous_blog/&#34; target=&#34;_blank&#34;&gt;blog&lt;/a&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I along with Ciperlabs team (which is a very little start up, started with two of my friends) developed an app for a client which is extracting tweets of a special user. If I go bit deep, we used twitter API for getting the latest tweet of a specific user. In order to that we have to access the timeline of the user and filter the latest tweet among all the tweets.[see – &lt;a href=&#34;https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-user_timeline&#34; target=&#34;_blank&#34;&gt;documentation&lt;/a&gt;]. As the document specifies the API allows only 900 requests in a window of 15 minutes with the user AUTH token. So, we needed to limit our system to send &lt;sup&gt;900&lt;/sup&gt;&amp;frasl;&lt;sub&gt;15&lt;/sub&gt;*60 → 1 request per second. Our server sends 1 requests per second to twitter side to read the latest tweet. We could have used twitter stream API easily, but it had many limitations, so we decided to go with our own implementation.&lt;/p&gt;
+
+&lt;p&gt;Back to the main topic. Building a server (let’s say tweet reader) to grab the latest tweet was just a part of the main project the big picture was to build a transaction automation system. The client wanted to automate the option trade placing on tradestation trading platform.  we deployed the application on Heroku for testing the functionality. As the Heroku free tier has a condition saying the app will be slept after 30 minutes of inactivity[&lt;a href=&#34;https://www.heroku.com/pricing&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;]. It was a really problematics for us to use this as a server which runs for 24*7.&lt;/p&gt;
+
+&lt;p&gt;After bit of a research I could be able to find about AWS lambda. It is a serverless, event driven platform. Serverless shows the current evolution of the hosting applications. Early days if we need to host our application we had to host it by ourselves. Then shared hosting came up where each application must share allocated resources among each other’s. After that using a dedicated virtual machine on a cloud platform became popular. In this case you have to pay for the performance of the virtual machine that you are purchasing. What if you need to process your application for a very limited time like 2 seconds. If you buy a dedicated machine just for this task?  it will be a waste of resources as most of the available commercial plans are either monthly basic or year basis. This is where serverless architecture comes in to play. Basically, you run your small small tasks on somebody else’s machine and pay for the time usage. AWS lambda is a good implementation of serverless architecture. Here my micro task is just to send a http request to my tweet reader server. If I got a dedicated VM or host the application by myself, I have to spend a lot of money. In this case I do it totally free.&lt;/p&gt;
+
+&lt;p&gt;As I had already created AWS student account I started working on Lamda immediately (To use AWS student account it was required to add a credit card). Lambda offers 1 million requests per month in their free tier (see – &lt;a href=&#34;https://aws.amazon.com/lambda/pricing&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;). This free tier of Lamba was more than enough for our application.  As Heroku app closes in each thirty minutes we have to awake the server in    each 30 minutes. So we need only 2* 24 = 48  requests per day and maximum of  48*31 = 1488 per months among the 1 MN free request we could use. Cool.&lt;/p&gt;
+
+&lt;p&gt;Let’s move to the actual works. After you log on to the AWS you can search “Lambda” in AWS services.&lt;/p&gt;
+
+&lt;p&gt;Then we can easily create a new lambda function by clicking “Create Function”&lt;/p&gt;
+
+&lt;p&gt;The required details must put in the following form. I used following setting for the tutorial. After clicking “create function” select “Blueprints” rather than selecting “Author from scratch”&lt;/p&gt;
+
+&lt;p&gt;By searching “lambda-canary” we can find the template that matches for our requirement. By the time the tutorial was written there were 2 lambda-canary functions, one is in python 3 and other one is in python 2.7. I used python 2.7 for the task. After that you have to fill the basic information about the function like name and role.&lt;/p&gt;
+
+&lt;p&gt;Then we must configure cloudwatch-events. It is required to follow syntax mentioned in the  &lt;a href=&#34;https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html&#34; target=&#34;_blank&#34;&gt;documentation&lt;/a&gt; to add the scheduler expression. The rate has set to 5 minutes here as you can see in Schedule Expression section and that follows the syntax of scheduler expression.&lt;/p&gt;
+
+&lt;p&gt;Then we must enable the trigger after creating it.&lt;/p&gt;
+
+&lt;p&gt;After successfully adding enabling the function we have to configure the sample canaray code.&lt;/p&gt;
+
+&lt;p&gt;That configuration can be easily done by setting the environment variables. The site will be the website that we are going to send the http requests. In my case it is Heroku app.  You can add the expected String to be in the page for the “Expected”.&lt;/p&gt;
+
+&lt;p&gt;After adding the relevant environment variables, you just have to create the function. Then you will be redirected to configuration page where you can still change the function. There is another tab called “Monitoring”. There you can see logs of your microservice.&lt;/p&gt;
+
+&lt;p&gt;This provides a various kind of logs on your application. “Jump to matric” shows you a clear expansion of the matrix and “Jump to logs” shows all the logs.&lt;/p&gt;
+
+&lt;p&gt;This is a basic example of using AWS Lambda. This powerful tool can be used to do lots of things. You can try the sample codes and get an understanding about the capabilities of that. Let’s meet with a new post soon.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

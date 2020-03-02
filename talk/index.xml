@@ -13,25 +13,74 @@
     </image>
     
     <item>
-      <title>Example Talk</title>
-      <link>/talk/example/</link>
+      <title>Events</title>
+      <link>/talk/events/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>/talk/example/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
+      <guid>/talk/events/</guid>
+      <description>
 
-&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
+&lt;h1 id=&#34;to-be-updated-soon&#34;&gt;To Be Updated Soon!&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Hobbies</title>
+      <link>/talk/myhobbies/</link>
+      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
+      <guid>/talk/myhobbies/</guid>
+      <description>
+
+&lt;h2 id=&#34;the-cajon-i-made-for-myself-d&#34;&gt;The Cajon I made for myself. :D&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;7.jpg&#34; alt=&#34;The Cajon I made for myself&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;isajje-interblocks&#34;&gt;#ISajje @ Interblocks&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;15.jpg&#34; alt=&#34;#ISajje @ Interblocks&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;no-comments&#34;&gt;No Comments&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;5.jpg&#34; alt=&#34;The Cajon I made for myself&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;trek-to-adara-kanda&#34;&gt;Trek to Adara Kanda&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;8.jpg&#34; alt=&#34;Trek to Adara Kanda&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;trek-to-wangedigala&#34;&gt;Trek to Wangedigala&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;3.jpg&#34; alt=&#34;Trek to Wangedigalat&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;trek-to-gawarawila-plains&#34;&gt;Trek to Gawarawila Plains&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;6.jpg&#34; alt=&#34;Trek to Gawarawila Plains&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;trek-to-thotupala-kanda&#34;&gt;Trek to Thotupala Kanda&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;4.jpg&#34; alt=&#34;Trek to Thotupala Kanda&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;the-fund-raising-programme-for-the-apeksha-cancer-hospital&#34;&gt;@ The Fund Raising Programme for the Apeksha Cancer Hospital&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;10.jpg&#34; alt=&#34;Trek to Thotupala Kanda&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;ananda-mehewara-2019&#34;&gt;Ananda Mehewara 2019&lt;/h2&gt;
+
+&lt;p&gt;We, Old anandian Engineering graduates helped two rural schools in Galgamuwa are.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;We conducted a lecture series about mathematics.&lt;/li&gt;
+&lt;li&gt;Built an IT room&lt;/li&gt;
+&lt;li&gt;Built Two outdoor class rooms.&lt;/li&gt;
+&lt;li&gt;Donated school Material/ Sports Material&lt;/li&gt;
+&lt;li&gt;Partitioned class rooms.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+&lt;p&gt;With the help of the fellow students, friends and the families.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;9.jpg&#34; alt=&#34;1&#34; /&gt;
+&lt;img src=&#34;11.jpg&#34; alt=&#34;2&#34; /&gt;
+&lt;img src=&#34;12.jpg&#34; alt=&#34;3&#34; /&gt;
+&lt;img src=&#34;13.jpg&#34; alt=&#34;4&#34; /&gt;
+&lt;img src=&#34;16.jpg&#34; alt=&#34;5&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

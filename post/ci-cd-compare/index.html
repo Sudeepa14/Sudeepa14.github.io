@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Sudeepa Nadeeshan">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="CI/CD, Travis">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/ci-cd-compare/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/ci-cd-compare/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Sudeepa Nadeeshan">
+  <meta property="og:url" content="/post/ci-cd-compare/">
+  <meta property="og:title" content="Continuous Integration with Travis CI | Sudeepa Nadeeshan">
+  <meta property="og:description" content="CI/CD, Travis"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2017-11-17T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2017-11-17T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/ci-cd-compare/"
+  },
+  "headline": "Continuous Integration with Travis CI",
+  
+  "datePublished": "2017-11-17T00:00:00Z",
+  "dateModified": "2017-11-17T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Sudeepa Nadeeshan"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sudeepa Nadeeshan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/img/icon-512.png"
+    }
+  },
+  "description": "CI/CD, Travis"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Continuous Integration with Travis CI | Sudeepa Nadeeshan</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Sudeepa Nadeeshan</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Continuous Integration with Travis CI</h1>
+
+  
+  <p class="page-subtitle">CI/CD, Travis</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  
+  <span><a href="/authors/admin/">Sudeepa Nadeeshan</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 17, 2017
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/demo/">Demo</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+<p><span style="color: red;"><strong>(Note:- The post was migrated from the previous blog written on 17th November 2017 <a href="https://web.archive.org/web/20181116085111/http://sudeepanadeeshan.me/2017/11/continuous-integration-with-travis-ci" target="_blank">web.arvhive.org</a>). That was a lossy migration and the images were not be able to recover using webarchive. See what happend to the previous <a href="http://localhost:1313/post/what_happend_to_previous_blog/" target="_blank">blog</a></strong></span></p>
+
+<p>After working with Jenkins at Interblocks, I really wanted to try something similar continuous integration tool for works. What is Continuous Integration?. The name itself defines what it is. It is basically a methodology used by the developers when they are working as a team. Whenever a team member commits a change to the repository that they are using, we can verify the new commit by an automated build. We can run some tests on that automated build using scripts. That’s the simplest idea. It will help to identify the mistakes and errors done by the programmers before merging to the branch. Ok fine. Then why TravisCI over jenkins. Though Jenkins seems cool and familiar, as I’m not usually working with JavaEE in daily basis, I wanted to do something related to nodeJs. Is that the only reason?. Not exactly actually Node project can be built with jenkins. But TravisCI is prefered over Jenkins based on some reasons and I’ve listed them below. In my case I got a Free Ticket :D. Student are given the facility to use TravisCI commercial version under the Github Student Pack. Github with the collaboration of some of the industry giants, provides a really good opportunity to try the paid tools free. <a href="https://education.github.com/pack/" target="_blank">Here</a> is the link and give it a try. I have used Github private repo pack, Namecheap domain pack, digital Ocean pack and planning to use Strip with a future projects.(Also there is another CI tool called Bamboo by atlassian and they are also providing it under their classroom package. Honestly I’ve never Tried it yet).</p>
+
+<h2 id="travis-ci-and-jenkins">Travis CI and  Jenkins.</h2>
+
+<table>
+<thead>
+<tr>
+<th>Jenkins</th>
+<th>TravisCI</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Suits for large project</td>
+<td>Suits for open source projects</td>
+</tr>
+
+<tr>
+<td>Free</td>
+<td>Pro version has more features</td>
+</tr>
+
+<tr>
+<td>Dedicated server is needed(You have to host it )</td>
+<td>No need of dedicated servers(It is already hosted)</td>
+</tr>
+
+<tr>
+<td>Configuring takes time</td>
+<td>No need of dedicated servers(It is already hosted)</td>
+</tr>
+</tbody>
+</table>
+
+<p># TravisCI</p>
+
+<p><a href="https://travis-ci.com/" target="_blank">Travis CI</a> is a hosted continuous integration and deployment system. As I mentioned before you do not need to host it by yourself you can use it as a SaaS. Like WordPress.com and WordPress.org,There are two versions of it, <a href="https://travis-ci.com/" target="_blank">travis-ci.com</a> (Travis Pro) for private repositories, and <a href="https://travis-ci.org/" target="_blank">travis-ci.org</a> for public repositories.</p>
+
+<h2 id="basics">Basics</h2>
+
+<p>To build a project using TravisCI we have to  have a .travis.yml in our repository. Basically that includes the metadata about the project as well as the scripts that we are hoping to run to test after building the branch. I will show you a one in the demo.  Let’s drive bit deep. There are few common terms in TravisCI and it’s better to be familiarise with them. A deployment is called a job which has several intermediate, sequential tasks called phases and  the main phases would be install,script,deploy those also will be covered in the demo. There is another term called “Build” which implements a group of tasks. To understand “Stage” term have a look at the below image.</p>
+
+<p>Figure – Stage</p>
+
+<p>### Process</p>
+
+<p>First creating a virtual environment for the app. Second cloning the repository into the virtual environment. Build the project. Run the test cases.</p>
+
+<p>### Supporting Languages</p>
+
+<p>TravisCI supports a range of languages. Here are some of them. Julia, Objective-C, Perl, Perl6, PHP, Python, R, Ruby, Rust, Scala, Smalltalk, Visual Basic.Android, C, C#, C++, Clojure, Crystal, D, Dart, Erlang, Elixir, F#, Go, Groovy Haskell, Haxe, Java, JavaScript (with Node.js).</p>
+
+<p># DEMO</p>
+
+<p>I’m just trying to deploy a simple nodeJS application using TravisCI. For this I’m going to use travis-ci.com. As I mentioned before, first of all I have to write a .travis.yml to my repo and commit it . This is my sample yml file</p>
+
+<p>.travis.yml</p>
+
+<script src="https://gist.github.com/Sudeepa14/bcda5ca3dc6ebac0a0705d44263f30ac.js"></script>
+
+<p>If there is not such a command TravisCI will automatically run “npm test” command which is specified in the “package.json” file. This command will be created automatically when you are initiating npm. This is it</p>
+
+<p>Figure – Package.json</p>
+
+<p>So far so good but why It is not building :/ .After doing a bit diving, I found the reason. Whenever a phase returns a non zero exit code, the TravisCI will think that as an “Ërror” . The default code is “”1”, So we have to change it to “0”. So here is my final result.</p>
+
+<p>Figure – Build Success</p>
+
+<p>Hooorayyyyyyyyyyyyyyyyyyyyyyyyyyyy</p>
+
+<p>So it succeeded, But by changing only the value to “1”, can we guarantee that the project built successfully? No for that you have to run real test cases. But for this one I did something else. I wrote a script in travis.yml to start the node server.</p>
+
+<p>Figure – Running the node server.</p>
+
+<p>The server started perfectly(that means the project is successfully built) but did not get the green sign. It was running for around 10 minutes and gave a build failure. Actually this failure doesn’t mean that we did something wrong. Just running the server will not give neither  1 nor 0 at the end of the execution. So t
+he test runs for the previously configured time and then stops after getting a timeout. That why it get failed. So we can be happy for now.</p>
+
+<h2 id="important-facts">Important facts</h2>
+
+<p>When you do a change in github, sometimes it won’t  sync with travisCI for manual building. For this reason I recommend to sync manually every time when you do a change to the code For that follow below steps.</p>
+
+<p>In the left corner tap the plus sign</p>
+
+<p>Figure – Select Syncing</p>
+
+<p>Then tap the syncing button(IF you hover over you will see the last synced time)</p>
+
+<p>Figure – Sync</p>
+
+<h1 id="cool-features">Cool features</h1>
+
+<h2 id="adding-to-build-status">Adding to build status</h2>
+
+<p>You may have seen some badges in the Readme files in some Github repositories saying the build is passed. It gives some kind of good vibes to the person who is going to use your code.</p>
+
+<p>Figure Build Passing tag in readme.md</p>
+
+<p>To add this. First tap on the build sign on the top to the page</p>
+
+<p>Figure – On the top of the project</p>
+
+<p>Then you get the image links related to your build.</p>
+
+<p>Figure – Image links related to the build</p>
+
+<p>Go to the readme.md and edit the link as follows.</p>
+
+<script src="https://gist.github.com/Sudeepa14/d30d821db79c48a76444800d57071368.js"></script>
+
+<h2 id="verifying-the-commits">Verifying the commits.</h2>
+
+<p>Wait a second. Why were we going to use CI in the first place??. To automate the build right? Do you see anything automated here. No. That is we did this for just for a demo. Actually each time when you are committing Travis CI will automatically build them. Actually this manually building that we just did is a beta feature that Travis is providing. If you select any file in your Github repo and go it’s its history you will see something like this.</p>
+
+<p>Figure -Auto building</p>
+
+<p>It will show the end result of your builds. Saying whether they passed or not. These will be available for every pull request too. So you can be sure about the code that you are going to merge to your repository. That’s all for today. Will meet with a new article soon. Bye.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/ci/cd-travis/">CI/CD, Travis</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/ci-cd-compare/&amp;text=Continuous%20Integration%20with%20Travis%20CI" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/ci-cd-compare/&amp;t=Continuous%20Integration%20with%20Travis%20CI" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Continuous%20Integration%20with%20Travis%20CI&amp;body=/post/ci-cd-compare/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/ci-cd-compare/&amp;title=Continuous%20Integration%20with%20Travis%20CI" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Continuous%20Integration%20with%20Travis%20CI%20/post/ci-cd-compare/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/ci-cd-compare/&amp;title=Continuous%20Integration%20with%20Travis%20CI" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hua852e7de9ce19e57f340783599f49404_41092_250x250_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Sudeepa Nadeeshan</a></h5>
+      <h6 class="card-subtitle">Research Assistant</h6>
+      <p class="card-text">My research interests include Intelligent Transport Systems, Machine Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/IAm_Sudeepa" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/sudeepa14" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=NTbUVMUAAAAJ&amp;hl=en#d=gs_hdr_drw" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

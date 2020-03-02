@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CI/CD, Github, Codes Demo | Sudeepa Nadeeshan</title>
+    <link>/tags/ci/cd-github-codes-demo/</link>
+      <atom:link href="/tags/ci/cd-github-codes-demo/index.xml" rel="self" type="application/rss+xml" />
+    <description>CI/CD, Github, Codes Demo</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 24 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>CI/CD, Github, Codes Demo</title>
+      <link>/tags/ci/cd-github-codes-demo/</link>
+    </image>
+    
+    <item>
+      <title>The only ML model I created for my own usage 😀 (part 1 of 3)</title>
+      <link>/post/ikman/</link>
+      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>/post/ikman/</guid>
+      <description>
+
+&lt;p&gt;&lt;span style=&#34;color: red;&#34;&gt;&lt;strong&gt;(Note:- The post was migrated from the previous blog written on 24th September 2018 &lt;a href=&#34;https://web.archive.org/web/20181116085149/http://sudeepanadeeshan.me/2018/09/the-only-ml-model-i-created-for-my-own-usage-%F0%9F%98%80-part-1-of-3&#34; target=&#34;_blank&#34;&gt;web.arvhive.org&lt;/a&gt;). That was a lossy migration and the images were not be able to recover using webarchive. See What Happend to the previous &lt;a href=&#34;http://localhost:1313/post/what_happend_to_previous_blog/&#34; target=&#34;_blank&#34;&gt;blog&lt;/a&gt;&lt;/strong&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;After playing with the homemade Cajon which I built (of cause father helped 😇😇 ),I eagerly wanted to have an acoustic drum set (This dream is there since Day 1).&lt;/p&gt;
+
+&lt;p&gt;This the Cajon that I built (The righter image shows the Cajon before polishing)&lt;/p&gt;
+
+&lt;p&gt;Well , I found a great wholesale seller from Alibaba and he agreed to send a single set for me (If you are interested contact me I can give you his WeChat contact). All seemed well until I realized the shipping prices and taxes are too high for a single set😑. The government applies a tax around 45% for a set 😑 . That moment I stopped dreaming about a brand-new set. Poor me then started checking second-hand products from Ikman. Most of the times all the ads are about electronic drums 🙁 . But a lot of cool deals comes to Ikman and vanishes so quickly. Most of the times I forget to check Ikman regularly . This was the time that I was taking Data Mining &amp;amp; Information Retrieval and Machine Learning for semester seven (&lt;a href=&#34;https://github.com/Sudeepa14/NewsFirst-Scrapy&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; are spiders that I developed the crawl &lt;a href=&#34;https://www.newsfirst.lk/&#34; target=&#34;_blank&#34;&gt;newsfirst.lk&lt;/a&gt; ). So, I mixed everything and built a ML model to identify whether the new ad is personally matches my requirement. Here are the main things I did.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Scraping the existing ads.&lt;/li&gt;
+&lt;li&gt;Pre-processing the scraped data.&lt;/li&gt;
+&lt;li&gt;Building the ML model and train it.&lt;/li&gt;
+&lt;li&gt;Developing pipeline for classifying a new ad in real time.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;1-scraping-the-existing-ads&#34;&gt;1. Scraping the existing ads.&lt;/h1&gt;
+
+&lt;p&gt;Here I Scraped all the adds related to drums which are currently available at Ikman (not a much ads were available as ikman is deleting each ad after 60 days). Well I used the knowledge that I gained from Data Mining and Information Retrieval to do this. I scraped around 600 ads from the site and saved them as json/csv. The following attributes are in an ads.csv.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Price – price of the drum item&lt;/li&gt;
+&lt;li&gt;Title – title of the ad&lt;/li&gt;
+&lt;li&gt;Link – URL of the advertisement.&lt;/li&gt;
+&lt;li&gt;Details – description the seller has given.&lt;/li&gt;
+&lt;li&gt;Location – Item location.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I used Python library called &lt;a href=&#34;https://scrapy.org/&#34; target=&#34;_blank&#34;&gt;scrapy&lt;/a&gt; to scrape the ads. There are very nice tutorials available for learning scrapy and even the official documentation is easy to understand. In scrapy you can define ‘spiders’ who crawl the webpages for you. I created a spider called “ikman” to crawl all the adds related to drums and drum items.&lt;/p&gt;
+
+&lt;p&gt;Here is a sample of the webpage in ikman you also follow &lt;a href=&#34;https://ikman.lk/en/ads/sri-lanka/musical-instruments?extra=percussion_drums&amp;amp;page=1&#34; target=&#34;_blank&#34;&gt;this link&lt;/a&gt; to see the latest ads 😛&lt;/p&gt;
+
+&lt;p&gt;I wrote the following spider to get all the ads.&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/Sudeepa14/0ff591b44218d7c6cb539c0888c22c89.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;I would like to point out 2 main things about this spider.&lt;/p&gt;
+
+&lt;h2 id=&#34;i-it-was-required-to-get-to-page-by-page-to-crawl-all-the-ads&#34;&gt;I. It was required to get to page by page to crawl all the ads.&lt;/h2&gt;
+
+&lt;p&gt;The ‘for loop’ in line 14 is to loop and find every ad items in the crawled web page. The ads are in div class of “ui-item”. Here I have used CSS to extract the elements in the page (you may need to use ‘XPATH’ instead of CSS when you need extract the absolute path to the element e.g.- line 31). Line 23 -25 is used to go to the next page when the crawling of the current page is over.&lt;/p&gt;
+
+&lt;h2 id=&#34;ii-it-was-required-to-go-to-inside-of-each-ad-to-get-the-ad-details&#34;&gt;II. It was required to go to inside of each ad to get the ad details.&lt;/h2&gt;
+
+&lt;p&gt;If you watch the web page closely you would see that in order to get the ad description you need to click the ad link. To do that, We send another request to the extracted ‘link’ of the ad(line 20 -21). That response is separately handled in parse_next function.&lt;/p&gt;
+
+&lt;p&gt;In addition to that I would like to mention the following facts which could help you when building a spider.&lt;/p&gt;
+
+&lt;h2 id=&#34;i-setting-encoding-format&#34;&gt;I. Setting encoding format.&lt;/h2&gt;
+
+&lt;p&gt;This sets the encoding method of the output file. In my case some ads are containing local language “Sinhala” and some weird emojis (Marketing Things 😅😅). If you want to capture these properly you have to set the following settings in the settings.py of your scrapy project.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;FEED_EXPORT_ENCODING = &amp;quot;utf-8&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;ii-don-t-check-your-output-csv-if-you-decide-to-csv-as-the-output-file-format-using-ms-excel&#34;&gt;II. Don’t check your output CSV (if you decide to CSV as the output file format) using ms excel.&lt;/h2&gt;
+
+&lt;p&gt;I got into this trap and thought I have done something wrong while scraping. Non Unicode scrapped data are not shown properly MS Excel. You would see some senseless characters if you open it in Excel. Better try a code editor like Visual Studio Code (CSV is nothing but a just tabular format of keeping data. The columns are separated by commas and the rows are separated using newlines).&lt;/p&gt;
+
+&lt;p&gt;You can run following command to scrape the data. (Please keep those instructions in mind 😀)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;scrapy crawl ikman -o scrapedData.csv
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;2-pre-processing-the-scraped-data&#34;&gt;2 Pre-processing the scraped data.&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;price,title,link,details,location
+&amp;quot;Rs 17,500&amp;quot;,SABIAN PRO High hat 14 inches pair,https://ikman.lk/en/ad/sabian-pro-high-hat-14-inches-pair-for-sale-colombo,SABIAN PRO High hat pair 14 inches . superb condition.not used in Srilanka,Colombo
+&amp;quot;Rs 64,000&amp;quot;,ROLAND SPD SX,https://ikman.lk/en/ad/roland-spd-sx-for-sale-anuradhapura,Brand new.,Anuradhapura
+&amp;quot;Rs 16,500&amp;quot;,PAISTE 101 High Hat 14 inch,https://ikman.lk/en/ad/paiste-101-high-hat-14-inch-for-sale-colombo,Paiste 101 hihat pair. not used in Srilanka.Imported  from Japan,Colombo
+&amp;quot;Rs 160,000&amp;quot;,Drum kit ( Pearl ),https://ikman.lk/en/ad/drum-kit-pearl-for-sale-kalutara,Drum kit ( Pearl )8/10/12/16 toms.Hat 14,Kalutara
+&amp;quot;Rs 16,000&amp;quot;,LASER High hat 14 inch( Germany),https://ikman.lk/en/ad/laser-high-hat-14-inch-germany-for-sale-colombo,&amp;quot;Laser high hat pair , made in Germany. not used in Srilanka. Imported from Japan&amp;quot;,Colombo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;First take a copy of a scrapedData.csv (called training.csv) and add another column. Called “output”. Now add “Y” or “N” to each entry in the file to this attribute. “Y” means I’m interested in this add and no is no I’m not 😀. Well I was the boss here so I had to tag all the data 😑. Here is a sample of ‘training.csv’.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;price,title,link,details,location,output
+&amp;quot;Rs 17,500&amp;quot;,SABIAN PRO High hat 14 inches pair,https://ikman.lk/en/ad/sabian-pro-high-hat-14-inches-pair-for-sale-colombo,SABIAN PRO High hat pair 14 inches . superb condition.not used in Srilanka,Colombo, Y
+&amp;quot;Rs 64,000&amp;quot;,ROLAND SPD SX,https://ikman.lk/en/ad/roland-spd-sx-for-sale-anuradhapura,Brand new.,Anuradhapura, N
+&amp;quot;Rs 16,500&amp;quot;,PAISTE 101 High Hat 14 inch,https://ikman.lk/en/ad/paiste-101-high-hat-14-inch-for-sale-colombo,Paiste 101 hihat pair. not used in Srilanka.Imported  from Japan,Colombo, Y
+&amp;quot;Rs 160,000&amp;quot;,Drum kit ( Pearl ),https://ikman.lk/en/ad/drum-kit-pearl-for-sale-kalutara,Drum kit ( Pearl )8/10/12/16 toms.Hat 14,Kalutara, N
+&amp;quot;Rs 16,000&amp;quot;,LASER High hat 14 inch( Germany),https://ikman.lk/en/ad/laser-high-hat-14-inch-germany-for-sale-colombo,&amp;quot;Laser high hat pair , made in Germany. not used in Srilanka. Imported from Japan&amp;quot;,Colombo, N
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we have the data to train a model. I will be discussing about the model that I built to classify these advertisements in the next article. That is the most interesting part(After that I will  discuss the pipelines that I developed to crawl live data and test them against the model using &lt;a href=&#34;https://scrapyd.readthedocs.io/&#34; target=&#34;_blank&#34;&gt;Scrapyd&lt;/a&gt; , &lt;a href=&#34;https://github.com/scrapy/scrapyd-client&#34; target=&#34;_blank&#34;&gt;Scrapyd-client&lt;/a&gt;, &lt;a href=&#34;https://sendgrid.com/&#34; target=&#34;_blank&#34;&gt;sendGrid&lt;/a&gt; on &lt;a href=&#34;https://bitnami.com/&#34; target=&#34;_blank&#34;&gt;Bitnamy Hosting&lt;/a&gt;). Let me know anything if there is any unclear thing here. Wait for the Dark Art 😀 !&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration and Deploying with Github Webhooks</title>
+      <link>/post/ci-cd/</link>
+      <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>/post/ci-cd/</guid>
+      <description>
+
+&lt;p&gt;&lt;span style=&#34;color: red;&#34;&gt;&lt;strong&gt;(Note:- The post was migrated from the previous blog written on 17th March 2018 &lt;a href=&#34;https://web.archive.org/web/20181116085144/http://sudeepanadeeshan.me/2018/03/continuous-integration-and-deploying-with-github-webhooks&#34; target=&#34;_blank&#34;&gt;web.arvhive.org&lt;/a&gt;). That was a lossy migration and the images were not be able to recover using webarchive. See What Happend to the previous &lt;a href=&#34;http://localhost:1313/post/what_happend_to_previous_blog/&#34; target=&#34;_blank&#34;&gt;blog&lt;/a&gt;&lt;/strong&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Last few days I spent digging into Continuous integration and delivering. I also have published a post about  CI with Travis CI before. This time I wanted to run my own CI system. Why? Well that Idea came to me when we were developing a project in university. We had to develop an app to collect voice samples in Sinhala language from the public for the project and we developed a simple responsive mobile app for that.  You can find it &lt;a href=&#34;https://sinhalaassistant.projects.mrt.ac.lk/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.(yeah it is a simple app, why the hack you made it https ? it a simple app!! :D  unfortunately  we had to get an SSL to use microphone via the browser otherwise browsers won’t let us to use the mic. I used my free student SSL provided by &lt;a href=&#34;https://www.namecheap.com/&#34; target=&#34;_blank&#34;&gt;Namecheap&lt;/a&gt; under &lt;a href=&#34;https://education.github.com/pack&#34; target=&#34;_blank&#34;&gt;Github Student Pack Promotion&lt;/a&gt;). I wrote the back end and it had only few functionalities (saving a voice sample on the &lt;a href=&#34;https://disk.yandex.com/&#34; target=&#34;_blank&#34;&gt;Yandex drive&lt;/a&gt; and the local server) and they had been well tested. The front-end made the trouble here (yes yes front ends are trouble makers 😀 ). It was a react app. We developed the application while it was running on the server. While we were doing QA we had to changes every time.  whenever we found a new bug/improvement we needed to,&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Commit the change to Github.&lt;/li&gt;
+&lt;li&gt;Log on to the server using Putty.&lt;/li&gt;
+&lt;li&gt;Change the current directory.&lt;/li&gt;
+&lt;li&gt;Pull the repository.&lt;/li&gt;
+&lt;li&gt;Build the react build&lt;/li&gt;
+&lt;li&gt;Restart the back end&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Doing this for a simple typo was really annoying. :/ So I wanted to AUTOMATE it! While I was reading about  Travis CI and Ansible (a Deployment automation tool) I realized the important of Webhooks. Basically it is an HTTP callback which notify to an endpoint when an event occurs. &lt;a href=&#34;https://developer.github.com/webhooks/securing/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; also has this facility.&lt;/p&gt;
+
+&lt;p&gt;For the web app we all contributed was not owned by me. So I had to use one of my own repo. I used a react application I’ve hosted on Github called youtubeDownloader ( It is a simple application which is used to save youtube video files in &lt;a href=&#34;https://mega.nz/&#34; target=&#34;_blank&#34;&gt;Mega clould&lt;/a&gt;– this give free 50GB storage with a super encryption facility). For the testing I used my droplet on &lt;a href=&#34;https://www.digitalocean.com/&#34; target=&#34;_blank&#34;&gt;DigitalOcean&lt;/a&gt; which I bought using free credit that I got from&lt;a href=&#34;https://education.github.com/pack&#34; target=&#34;_blank&#34;&gt;Github Student Pack Promotion&lt;/a&gt;. My server is a Ubuntu 16.04.3 having 1GB RAM. Back to the topic. Here is overall architecture.&lt;/p&gt;
+
+&lt;p&gt;The started configuring the webhook first. You can configure this in Settings à Webhook à Add Webhook .(password confirmation step will be added here.&lt;/p&gt;
+
+&lt;p&gt;Then you will have to configure the following settings.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Payload URL&lt;/strong&gt; – This is the endpoint of your listening server. My one was in following format – &lt;a href=&#34;http://myip:8081/api/newPull&#34; target=&#34;_blank&#34;&gt;http://myip:8081/api/newPull&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Content type&lt;/strong&gt; – This sets the format of the content you are receiving. This can be either application/json or application/x-www-form-urlencoded. I personally prefer application/json as it is really easy to access.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Secret&lt;/strong&gt; – This a really important and I will explain the important with the implementation. Just think this is some kind of an encryption key. Basically all the data will be encrypted using the key.&lt;/p&gt;
+
+&lt;p&gt;The I chose &lt;strong&gt;“just the push event”&lt;/strong&gt; as I only needed to automate things when a push happens. Also do not forget to tick the “Active” checkbox.&lt;/p&gt;
+
+&lt;p&gt;Now we have to configure the server to listen for  event notifications and the entered end point in the server.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/Sudeepa14/manualCI-CD&#34; target=&#34;_blank&#34;&gt;Here&lt;/a&gt; is the server. It is just a simple Nodejs server running on ubuntu.  The following endpoint is the one that the pull request is sent by Github.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;router.post(&#39;/newPull&#39;,function(req,res){
+....
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now the basics of cryptography comes in to the play. Remember the “secret” that you entered on Github repo? The requset data comes from Github is encrypted by the using HMAC . Github takes &lt;a href=&#34;https://en.wikipedia.org/wiki/SHA-1&#34; target=&#34;_blank&#34;&gt;SHA1&lt;/a&gt;  hash function and the “Secret” you entered and the response body data to generate &lt;a href=&#34;/https://en.wikipedia.org/wiki/HMAC&#34;&gt;HMAC&lt;/a&gt; digest.This encryption helps to protect data integrity and the verify authentication. Github sends the HMAC they calculated as the field “X-Hub-Signature” inside the post request header. We must implement a way to regenerated the HMAC signature from our side too using post request body, secret key and sha1 hash function. If those to matches we can verify the request.&lt;/p&gt;
+
+&lt;p&gt;I created .env file containing the session secret as follows. Then added .env to gitignore file to stop it is committed to github repository.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;SECRET_TOKEN=myToken
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Installing ‘dotenv’ node module helps to import environment variables in nodeJs. We just have to import it as,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;require(&#39;dotenv&#39;).config()
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We can access them as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;process.env.SECRET_TOKEN
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is how we can implement HMAC generation from our side.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;
+router.post(&#39;/newPull&#39;,function(req,res){
+
+  var hmac, signature;
+  //configuring hash function using sha1 and secret. 
+  hmac = crypto.createHmac(&amp;quot;sha1&amp;quot;, process.env.SECRET_TOKEN);
+  //generating hash using request body 
+  hmac.update(JSON.stringify(req.body));
+  // format it to github format
+  signature =&amp;quot;sha1=&amp;quot;+hmac.digest(&amp;quot;hex&amp;quot;);
+  //validating 
+  if(signature===req.headers[&#39;x-hub-signature&#39;]){
+    //both the signatures match continue CI/CD
+    CI.builder(res);
+  }
+  else{
+    res.sendStatus(200);    
+  }
+});
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The we can run our server and test configuration. You can see a “Recent Delivery” section under your webhook on Github. This tells whether your end point responded to the webhook post request or not. If yes you can see a 200 -ok response with green colour. If there is something wrong it will get red.&lt;/p&gt;
+
+&lt;p&gt;You can use “Redeliver” to deliver the payload again for testing.&lt;/p&gt;
+
+&lt;p&gt;(Please consider the time out of the github request is low. So you have to take care of the responding to github request before running your server CI scripts. Otherwise logs will be in red.)&lt;/p&gt;
+
+&lt;p&gt;Now the notifying part is properly configured so we have to focus on automation ♥♥♥.  Here is the script file that does the automation.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;git -C ../youtubeDownloader/react/ pull origin master
+
+sudo npm run build --prefix ../youtubeDownloader/react/
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first line  pulling the github repository. But why – C ? We are runing this script while not being in the relevant git directory. So we have to point git that this is the directory that should get updated and check the .git directory in the path mentioned.   Also it is essential to save your github credentials to run the aboue. Otherwise a authentication  step may be added. It makes automation harder.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;git config credential.helper store
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The second one also does something similar.  It points to the directory path to npm using –prefix flag. “npm run build” is the script that we use to build react build directory. sudo may need to use to avoid permission issues.&lt;/p&gt;
+
+&lt;p&gt;after creating the above script file as “autoBuilder.sh” inside the server. Now we have to give sufficient permimissions&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;chmod +x autoBuilder.sh
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we have a method to be notified and a script to automate. Now what. well a little linkage left. But how? If I simply say we need to find a way to run a shell script when a new request comes from Github. We can use &lt;a href=&#34;https://www.npmjs.com/package/shelljs&#34; target=&#34;_blank&#34;&gt;ShellJs&lt;/a&gt; package in npm for that. It allowed us to run terminal command using Node. ShellJs API allows to run basic shell commands like cp, cd etc. Also we can execute a shell command like,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;shell.exec(&amp;quot;sudo ./autoBuilder.sh&amp;quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I developed a separate controller called “CI.js” for running that. Here is it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;var shell = require(&#39;shelljs&#39;);
+
+exports.builder=function(res){
+    shell.echo(&#39;this is from shelljs Module&#39;);
+    //sending the response for github post request as it gets time out if we wait until automation.
+    res.sendStatus(200);
+    shell.exec(&amp;quot;sudo ./autoBuilder.sh&amp;quot;); 
+
+}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(I have placed my “autoBuilder.sh” inside the listening server directory root).&lt;/p&gt;
+
+&lt;p&gt;This is how my console seems when a I added a new “readme.md” file to the master.&lt;/p&gt;
+
+&lt;h2 id=&#34;few-more-things&#34;&gt;Few More things.&lt;/h2&gt;
+
+&lt;p&gt;In you use&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;node server.js
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;npm start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;commands to start the node server of the application. It won’t adapt to the changes happen in the build file. So we have to take care of that too. We can use &lt;a href=&#34;https://www.npmjs.com/package/nodemon&#34; target=&#34;_blank&#34;&gt;nodemon&lt;/a&gt; npm package to listen for the file changes on the server.  It can be simply installed as follows.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;npm install -g nodemon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;First change the current directory to the server directory of the application. Then start a new window using screen.  (Normally we use “screen” tool to start services on the server. it lets us to keep running the service while we doing something else on the server. here is a &lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-install-and-use-screen-on-an-ubuntu-cloud-server&#34; target=&#34;_blank&#34;&gt;guideline&lt;/a&gt; from digitalOcean for screen tool) .&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;screen
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;nodemon server.js
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now press to leave the screen.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;CTRL + a + d
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;what-s-more&#34;&gt;What’s More?&lt;/h2&gt;
+
+&lt;p&gt;This seems easy and simple. But there are few drawbacks with this approach. Yet we can address them efficiently.&lt;/p&gt;
+
+&lt;p&gt;The build that we deploy on the live environment is not properly tested.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Building the build directory only on a &lt;strong&gt;test environment&lt;/strong&gt; when a commit comes.&lt;/li&gt;
+&lt;li&gt;Testing the build using “npm test”. (we can write scripts for testing under “test” script in package.json)&lt;/li&gt;
+&lt;li&gt;If it passes put deploy it to the production(simply coping), else reject.
+The server restarts each and every time when we are committing, even for minor commits!  We can implement a method to filter out the commits  notification and build for only specific commits.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We don’t manages the releases here. That is really bad practise to do if we are deploy something serious. Deployment automation tools like Ansible, Chef could help for these problems.&lt;/p&gt;
+
+&lt;p&gt;That’s it for this post. Hope you learned something out of this.  Thanks for reading.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

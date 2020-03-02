@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CI/CD, Travis | Sudeepa Nadeeshan</title>
+    <link>/tags/ci/cd-travis/</link>
+      <atom:link href="/tags/ci/cd-travis/index.xml" rel="self" type="application/rss+xml" />
+    <description>CI/CD, Travis</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 17 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>CI/CD, Travis</title>
+      <link>/tags/ci/cd-travis/</link>
+    </image>
+    
+    <item>
+      <title>Continuous Integration with Travis CI</title>
+      <link>/post/ci-cd-compare/</link>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/post/ci-cd-compare/</guid>
+      <description>
+
+&lt;p&gt;&lt;span style=&#34;color: red;&#34;&gt;&lt;strong&gt;(Note:- The post was migrated from the previous blog written on 17th November 2017 &lt;a href=&#34;https://web.archive.org/web/20181116085111/http://sudeepanadeeshan.me/2017/11/continuous-integration-with-travis-ci&#34; target=&#34;_blank&#34;&gt;web.arvhive.org&lt;/a&gt;). That was a lossy migration and the images were not be able to recover using webarchive. See what happend to the previous &lt;a href=&#34;http://localhost:1313/post/what_happend_to_previous_blog/&#34; target=&#34;_blank&#34;&gt;blog&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;After working with Jenkins at Interblocks, I really wanted to try something similar continuous integration tool for works. What is Continuous Integration?. The name itself defines what it is. It is basically a methodology used by the developers when they are working as a team. Whenever a team member commits a change to the repository that they are using, we can verify the new commit by an automated build. We can run some tests on that automated build using scripts. That’s the simplest idea. It will help to identify the mistakes and errors done by the programmers before merging to the branch. Ok fine. Then why TravisCI over jenkins. Though Jenkins seems cool and familiar, as I’m not usually working with JavaEE in daily basis, I wanted to do something related to nodeJs. Is that the only reason?. Not exactly actually Node project can be built with jenkins. But TravisCI is prefered over Jenkins based on some reasons and I’ve listed them below. In my case I got a Free Ticket :D. Student are given the facility to use TravisCI commercial version under the Github Student Pack. Github with the collaboration of some of the industry giants, provides a really good opportunity to try the paid tools free. &lt;a href=&#34;https://education.github.com/pack/&#34; target=&#34;_blank&#34;&gt;Here&lt;/a&gt; is the link and give it a try. I have used Github private repo pack, Namecheap domain pack, digital Ocean pack and planning to use Strip with a future projects.(Also there is another CI tool called Bamboo by atlassian and they are also providing it under their classroom package. Honestly I’ve never Tried it yet).&lt;/p&gt;
+
+&lt;h2 id=&#34;travis-ci-and-jenkins&#34;&gt;Travis CI and  Jenkins.&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Jenkins&lt;/th&gt;
+&lt;th&gt;TravisCI&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Suits for large project&lt;/td&gt;
+&lt;td&gt;Suits for open source projects&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Free&lt;/td&gt;
+&lt;td&gt;Pro version has more features&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Dedicated server is needed(You have to host it )&lt;/td&gt;
+&lt;td&gt;No need of dedicated servers(It is already hosted)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Configuring takes time&lt;/td&gt;
+&lt;td&gt;No need of dedicated servers(It is already hosted)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;# TravisCI&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://travis-ci.com/&#34; target=&#34;_blank&#34;&gt;Travis CI&lt;/a&gt; is a hosted continuous integration and deployment system. As I mentioned before you do not need to host it by yourself you can use it as a SaaS. Like WordPress.com and WordPress.org,There are two versions of it, &lt;a href=&#34;https://travis-ci.com/&#34; target=&#34;_blank&#34;&gt;travis-ci.com&lt;/a&gt; (Travis Pro) for private repositories, and &lt;a href=&#34;https://travis-ci.org/&#34; target=&#34;_blank&#34;&gt;travis-ci.org&lt;/a&gt; for public repositories.&lt;/p&gt;
+
+&lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;
+
+&lt;p&gt;To build a project using TravisCI we have to  have a .travis.yml in our repository. Basically that includes the metadata about the project as well as the scripts that we are hoping to run to test after building the branch. I will show you a one in the demo.  Let’s drive bit deep. There are few common terms in TravisCI and it’s better to be familiarise with them. A deployment is called a job which has several intermediate, sequential tasks called phases and  the main phases would be install,script,deploy those also will be covered in the demo. There is another term called “Build” which implements a group of tasks. To understand “Stage” term have a look at the below image.&lt;/p&gt;
+
+&lt;p&gt;Figure – Stage&lt;/p&gt;
+
+&lt;p&gt;### Process&lt;/p&gt;
+
+&lt;p&gt;First creating a virtual environment for the app. Second cloning the repository into the virtual environment. Build the project. Run the test cases.&lt;/p&gt;
+
+&lt;p&gt;### Supporting Languages&lt;/p&gt;
+
+&lt;p&gt;TravisCI supports a range of languages. Here are some of them. Julia, Objective-C, Perl, Perl6, PHP, Python, R, Ruby, Rust, Scala, Smalltalk, Visual Basic.Android, C, C#, C++, Clojure, Crystal, D, Dart, Erlang, Elixir, F#, Go, Groovy Haskell, Haxe, Java, JavaScript (with Node.js).&lt;/p&gt;
+
+&lt;p&gt;# DEMO&lt;/p&gt;
+
+&lt;p&gt;I’m just trying to deploy a simple nodeJS application using TravisCI. For this I’m going to use travis-ci.com. As I mentioned before, first of all I have to write a .travis.yml to my repo and commit it . This is my sample yml file&lt;/p&gt;
+
+&lt;p&gt;.travis.yml&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/Sudeepa14/bcda5ca3dc6ebac0a0705d44263f30ac.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;If there is not such a command TravisCI will automatically run “npm test” command which is specified in the “package.json” file. This command will be created automatically when you are initiating npm. This is it&lt;/p&gt;
+
+&lt;p&gt;Figure – Package.json&lt;/p&gt;
+
+&lt;p&gt;So far so good but why It is not building :/ .After doing a bit diving, I found the reason. Whenever a phase returns a non zero exit code, the TravisCI will think that as an “Ërror” . The default code is “”1”, So we have to change it to “0”. So here is my final result.&lt;/p&gt;
+
+&lt;p&gt;Figure – Build Success&lt;/p&gt;
+
+&lt;p&gt;Hooorayyyyyyyyyyyyyyyyyyyyyyyyyyyy&lt;/p&gt;
+
+&lt;p&gt;So it succeeded, But by changing only the value to “1”, can we guarantee that the project built successfully? No for that you have to run real test cases. But for this one I did something else. I wrote a script in travis.yml to start the node server.&lt;/p&gt;
+
+&lt;p&gt;Figure – Running the node server.&lt;/p&gt;
+
+&lt;p&gt;The server started perfectly(that means the project is successfully built) but did not get the green sign. It was running for around 10 minutes and gave a build failure. Actually this failure doesn’t mean that we did something wrong. Just running the server will not give neither  1 nor 0 at the end of the execution. So t
+he test runs for the previously configured time and then stops after getting a timeout. That why it get failed. So we can be happy for now.&lt;/p&gt;
+
+&lt;h2 id=&#34;important-facts&#34;&gt;Important facts&lt;/h2&gt;
+
+&lt;p&gt;When you do a change in github, sometimes it won’t  sync with travisCI for manual building. For this reason I recommend to sync manually every time when you do a change to the code For that follow below steps.&lt;/p&gt;
+
+&lt;p&gt;In the left corner tap the plus sign&lt;/p&gt;
+
+&lt;p&gt;Figure – Select Syncing&lt;/p&gt;
+
+&lt;p&gt;Then tap the syncing button(IF you hover over you will see the last synced time)&lt;/p&gt;
+
+&lt;p&gt;Figure – Sync&lt;/p&gt;
+
+&lt;h1 id=&#34;cool-features&#34;&gt;Cool features&lt;/h1&gt;
+
+&lt;h2 id=&#34;adding-to-build-status&#34;&gt;Adding to build status&lt;/h2&gt;
+
+&lt;p&gt;You may have seen some badges in the Readme files in some Github repositories saying the build is passed. It gives some kind of good vibes to the person who is going to use your code.&lt;/p&gt;
+
+&lt;p&gt;Figure Build Passing tag in readme.md&lt;/p&gt;
+
+&lt;p&gt;To add this. First tap on the build sign on the top to the page&lt;/p&gt;
+
+&lt;p&gt;Figure – On the top of the project&lt;/p&gt;
+
+&lt;p&gt;Then you get the image links related to your build.&lt;/p&gt;
+
+&lt;p&gt;Figure – Image links related to the build&lt;/p&gt;
+
+&lt;p&gt;Go to the readme.md and edit the link as follows.&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/Sudeepa14/d30d821db79c48a76444800d57071368.js&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;verifying-the-commits&#34;&gt;Verifying the commits.&lt;/h2&gt;
+
+&lt;p&gt;Wait a second. Why were we going to use CI in the first place??. To automate the build right? Do you see anything automated here. No. That is we did this for just for a demo. Actually each time when you are committing Travis CI will automatically build them. Actually this manually building that we just did is a beta feature that Travis is providing. If you select any file in your Github repo and go it’s its history you will see something like this.&lt;/p&gt;
+
+&lt;p&gt;Figure -Auto building&lt;/p&gt;
+
+&lt;p&gt;It will show the end result of your builds. Saying whether they passed or not. These will be available for every pull request too. So you can be sure about the code that you are going to merge to your repository. That’s all for today. Will meet with a new article soon. Bye.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

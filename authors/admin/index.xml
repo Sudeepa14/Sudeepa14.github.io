@@ -5,12 +5,47 @@
     <link>/authors/admin/</link>
       <atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>Sudeepa Nadeeshan</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 20 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Sudeepa Nadeeshan</title>
       <link>/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>Why Your Own Blog?</title>
+      <link>/post/what_happend_to_previous_blog/</link>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/post/what_happend_to_previous_blog/</guid>
+      <description>&lt;p&gt;This is the third blog that I&amp;rsquo;m running as a computer professional. :D (Hope this will be the last one. Migrations are not that smooth). Let me briefly explain how I ended up here. First, I started a blog on Blogspot back in 2017, and It was cool. It was &lt;a href=&#34;http://sudeepanadeeshan.blogspot.com/&#34; target=&#34;_blank&#34;&gt;(http://sudeepanadeeshan.blogspot.com/&lt;/a&gt;. I was not happy with the way that blog look. That time I got to know about Wordpress. So I planned to move to Wordpress, but this poor student did not have enough money (or wasn&amp;rsquo;t willing to pay pocket money to some hosting company). Obviously, I checked for free services. Finally, I came across &lt;a href=&#34;https://www.000webhost.com/&#34; target=&#34;_blank&#34;&gt;000webhosting&lt;/a&gt;. Excellent, Cpanel hosting service with a free Tier. I jumped in. Searched for hundreds of free appropriate themes and  finally satisfied with  &lt;a href=&#34;https://themehall.com/me-omega-child-theme&#34; target=&#34;_blank&#34;&gt;Me&lt;/a&gt; from themehall.&lt;/p&gt;
+
+&lt;p&gt;I customized the theme in for my requirement. Added tweeter handle, coding plugins, blah blah. The blog was totally fine. You can check it from &lt;a href=&#34;https://web.archive.org/web/20181209035942/http://sudeepanadeeshan.me&#34; target=&#34;_blank&#34;&gt;web.archive.org&lt;/a&gt;. Everything was fine until 000webhost suddenly decided to delete my website from there servers without keeping ANY BACKUPS! I even tried to pay for the past months and get the site back. NOTHING WORKED! Actually, I should not blame them for not keeping the backups as it is my duty to baking up my own website (but come on, you should keep something for the customers!). So that&amp;rsquo;s how I said goodbye to Wordpress.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;1.PNG&#34; alt=&#34;Me by Themehall&#34; title=&#34;Logo Title Text 1&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So I wanted to develop my blog again. But I was not particularly eager  to use any blogging platforms like Medium (As I do know something about coding ;) ). I did some research about the available blogging platforms for coders and heard about &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;. Hugo has several themes and widgets. I found &lt;a href=&#34;https://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34;&gt;Academic&lt;/a&gt; theme very attractive among them.&lt;/p&gt;
+
+&lt;p&gt;Academic has been released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license. George Cushen lists key features of &lt;strong&gt;Academic&lt;/strong&gt; as follows,&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Voicer: A Crowd Sourcing Tool for Speech Data Collection</title>
@@ -51,189 +86,602 @@ Supplementary notes can be added here, including [code and math](https://sourcet
     </item>
     
     <item>
-      <title>Display Jupyter Notebooks with Academic</title>
-      <link>/post/jupyter/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/post/jupyter/</guid>
+      <title>The only ML model I created for my own usage 😀 (part 1 of 3)</title>
+      <link>/post/ikman/</link>
+      <pubDate>Mon, 24 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>/post/ikman/</guid>
       <description>
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
-Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
+&lt;p&gt;&lt;span style=&#34;color: red;&#34;&gt;&lt;strong&gt;(Note:- The post was migrated from the previous blog written on 24th September 2018 &lt;a href=&#34;https://web.archive.org/web/20181116085149/http://sudeepanadeeshan.me/2018/09/the-only-ml-model-i-created-for-my-own-usage-%F0%9F%98%80-part-1-of-3&#34; target=&#34;_blank&#34;&gt;web.arvhive.org&lt;/a&gt;). That was a lossy migration and the images were not be able to recover using webarchive. See What Happend to the previous &lt;a href=&#34;http://localhost:1313/post/what_happend_to_previous_blog/&#34; target=&#34;_blank&#34;&gt;blog&lt;/a&gt;&lt;/strong&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;After playing with the homemade Cajon which I built (of cause father helped 😇😇 ),I eagerly wanted to have an acoustic drum set (This dream is there since Day 1).&lt;/p&gt;
+
+&lt;p&gt;This the Cajon that I built (The righter image shows the Cajon before polishing)&lt;/p&gt;
+
+&lt;p&gt;Well , I found a great wholesale seller from Alibaba and he agreed to send a single set for me (If you are interested contact me I can give you his WeChat contact). All seemed well until I realized the shipping prices and taxes are too high for a single set😑. The government applies a tax around 45% for a set 😑 . That moment I stopped dreaming about a brand-new set. Poor me then started checking second-hand products from Ikman. Most of the times all the ads are about electronic drums 🙁 . But a lot of cool deals comes to Ikman and vanishes so quickly. Most of the times I forget to check Ikman regularly . This was the time that I was taking Data Mining &amp;amp; Information Retrieval and Machine Learning for semester seven (&lt;a href=&#34;https://github.com/Sudeepa14/NewsFirst-Scrapy&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; are spiders that I developed the crawl &lt;a href=&#34;https://www.newsfirst.lk/&#34; target=&#34;_blank&#34;&gt;newsfirst.lk&lt;/a&gt; ). So, I mixed everything and built a ML model to identify whether the new ad is personally matches my requirement. Here are the main things I did.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Scraping the existing ads.&lt;/li&gt;
+&lt;li&gt;Pre-processing the scraped data.&lt;/li&gt;
+&lt;li&gt;Building the ML model and train it.&lt;/li&gt;
+&lt;li&gt;Developing pipeline for classifying a new ad in real time.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;1-scraping-the-existing-ads&#34;&gt;1. Scraping the existing ads.&lt;/h1&gt;
+
+&lt;p&gt;Here I Scraped all the adds related to drums which are currently available at Ikman (not a much ads were available as ikman is deleting each ad after 60 days). Well I used the knowledge that I gained from Data Mining and Information Retrieval to do this. I scraped around 600 ads from the site and saved them as json/csv. The following attributes are in an ads.csv.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Price – price of the drum item&lt;/li&gt;
+&lt;li&gt;Title – title of the ad&lt;/li&gt;
+&lt;li&gt;Link – URL of the advertisement.&lt;/li&gt;
+&lt;li&gt;Details – description the seller has given.&lt;/li&gt;
+&lt;li&gt;Location – Item location.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I used Python library called &lt;a href=&#34;https://scrapy.org/&#34; target=&#34;_blank&#34;&gt;scrapy&lt;/a&gt; to scrape the ads. There are very nice tutorials available for learning scrapy and even the official documentation is easy to understand. In scrapy you can define ‘spiders’ who crawl the webpages for you. I created a spider called “ikman” to crawl all the adds related to drums and drum items.&lt;/p&gt;
+
+&lt;p&gt;Here is a sample of the webpage in ikman you also follow &lt;a href=&#34;https://ikman.lk/en/ads/sri-lanka/musical-instruments?extra=percussion_drums&amp;amp;page=1&#34; target=&#34;_blank&#34;&gt;this link&lt;/a&gt; to see the latest ads 😛&lt;/p&gt;
+
+&lt;p&gt;I wrote the following spider to get all the ads.&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/Sudeepa14/0ff591b44218d7c6cb539c0888c22c89.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;I would like to point out 2 main things about this spider.&lt;/p&gt;
+
+&lt;h2 id=&#34;i-it-was-required-to-get-to-page-by-page-to-crawl-all-the-ads&#34;&gt;I. It was required to get to page by page to crawl all the ads.&lt;/h2&gt;
+
+&lt;p&gt;The ‘for loop’ in line 14 is to loop and find every ad items in the crawled web page. The ads are in div class of “ui-item”. Here I have used CSS to extract the elements in the page (you may need to use ‘XPATH’ instead of CSS when you need extract the absolute path to the element e.g.- line 31). Line 23 -25 is used to go to the next page when the crawling of the current page is over.&lt;/p&gt;
+
+&lt;h2 id=&#34;ii-it-was-required-to-go-to-inside-of-each-ad-to-get-the-ad-details&#34;&gt;II. It was required to go to inside of each ad to get the ad details.&lt;/h2&gt;
+
+&lt;p&gt;If you watch the web page closely you would see that in order to get the ad description you need to click the ad link. To do that, We send another request to the extracted ‘link’ of the ad(line 20 -21). That response is separately handled in parse_next function.&lt;/p&gt;
+
+&lt;p&gt;In addition to that I would like to mention the following facts which could help you when building a spider.&lt;/p&gt;
+
+&lt;h2 id=&#34;i-setting-encoding-format&#34;&gt;I. Setting encoding format.&lt;/h2&gt;
+
+&lt;p&gt;This sets the encoding method of the output file. In my case some ads are containing local language “Sinhala” and some weird emojis (Marketing Things 😅😅). If you want to capture these properly you have to set the following settings in the settings.py of your scrapy project.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;FEED_EXPORT_ENCODING = &amp;quot;utf-8&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;./index_1_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ii-don-t-check-your-output-csv-if-you-decide-to-csv-as-the-output-file-format-using-ms-excel&#34;&gt;II. Don’t check your output CSV (if you decide to CSV as the output file format) using ms excel.&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
+&lt;p&gt;I got into this trap and thought I have done something wrong while scraping. Non Unicode scrapped data are not shown properly MS Excel. You would see some senseless characters if you open it in Excel. Better try a code editor like Visual Studio Code (CSV is nothing but a just tabular format of keeping data. The columns are separated by commas and the rows are separated using newlines).&lt;/p&gt;
+
+&lt;p&gt;You can run following command to scrape the data. (Please keep those instructions in mind 😀)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;scrapy crawl ikman -o scrapedData.csv
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code&gt;Welcome to Academic!
+&lt;h1 id=&#34;2-pre-processing-the-scraped-data&#34;&gt;2 Pre-processing the scraped data.&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;price,title,link,details,location
+&amp;quot;Rs 17,500&amp;quot;,SABIAN PRO High hat 14 inches pair,https://ikman.lk/en/ad/sabian-pro-high-hat-14-inches-pair-for-sale-colombo,SABIAN PRO High hat pair 14 inches . superb condition.not used in Srilanka,Colombo
+&amp;quot;Rs 64,000&amp;quot;,ROLAND SPD SX,https://ikman.lk/en/ad/roland-spd-sx-for-sale-anuradhapura,Brand new.,Anuradhapura
+&amp;quot;Rs 16,500&amp;quot;,PAISTE 101 High Hat 14 inch,https://ikman.lk/en/ad/paiste-101-high-hat-14-inch-for-sale-colombo,Paiste 101 hihat pair. not used in Srilanka.Imported  from Japan,Colombo
+&amp;quot;Rs 160,000&amp;quot;,Drum kit ( Pearl ),https://ikman.lk/en/ad/drum-kit-pearl-for-sale-kalutara,Drum kit ( Pearl )8/10/12/16 toms.Hat 14,Kalutara
+&amp;quot;Rs 16,000&amp;quot;,LASER High hat 14 inch( Germany),https://ikman.lk/en/ad/laser-high-hat-14-inch-germany-for-sale-colombo,&amp;quot;Laser high hat pair , made in Germany. not used in Srilanka. Imported from Japan&amp;quot;,Colombo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;install-python-and-jupyterlab&#34;&gt;Install Python and JupyterLab&lt;/h2&gt;
+&lt;p&gt;First take a copy of a scrapedData.csv (called training.csv) and add another column. Called “output”. Now add “Y” or “N” to each entry in the file to this attribute. “Y” means I’m interested in this add and no is no I’m not 😀. Well I was the boss here so I had to tag all the data 😑. Here is a sample of ‘training.csv’.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and JupyterLab.&lt;/p&gt;
-
-&lt;p&gt;Alternatively, install JupyterLab with &lt;code&gt;pip3 install jupyterlab&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
-
-&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY-WEBSITE-FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;SHORT-POST-TITLE&amp;gt;&lt;/code&gt; with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir -p &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-cd &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-jupyter lab index.ipynb
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;price,title,link,details,location,output
+&amp;quot;Rs 17,500&amp;quot;,SABIAN PRO High hat 14 inches pair,https://ikman.lk/en/ad/sabian-pro-high-hat-14-inches-pair-for-sale-colombo,SABIAN PRO High hat pair 14 inches . superb condition.not used in Srilanka,Colombo, Y
+&amp;quot;Rs 64,000&amp;quot;,ROLAND SPD SX,https://ikman.lk/en/ad/roland-spd-sx-for-sale-anuradhapura,Brand new.,Anuradhapura, N
+&amp;quot;Rs 16,500&amp;quot;,PAISTE 101 High Hat 14 inch,https://ikman.lk/en/ad/paiste-101-high-hat-14-inch-for-sale-colombo,Paiste 101 hihat pair. not used in Srilanka.Imported  from Japan,Colombo, Y
+&amp;quot;Rs 160,000&amp;quot;,Drum kit ( Pearl ),https://ikman.lk/en/ad/drum-kit-pearl-for-sale-kalutara,Drum kit ( Pearl )8/10/12/16 toms.Hat 14,Kalutara, N
+&amp;quot;Rs 16,000&amp;quot;,LASER High hat 14 inch( Germany),https://ikman.lk/en/ad/laser-high-hat-14-inch-germany-for-sale-colombo,&amp;quot;Laser high hat pair , made in Germany. not used in Srilanka. Imported from Japan&amp;quot;,Colombo, N
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The &lt;code&gt;jupyter&lt;/code&gt; command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.&lt;/p&gt;
-
-&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
-
-&lt;p&gt;The first cell of your Jupter notebook will contain your post metadata (&lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34;&gt;front matter&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;In Jupter, choose &lt;em&gt;Markdown&lt;/em&gt; as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-title: My post&#39;s title
-date: 2019-09-01
-
-# Put any other Academic metadata here...
----
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Edit the metadata of your post, using the &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content&#34; target=&#34;_blank&#34;&gt;documentation&lt;/a&gt; as a guide to the available options.&lt;/p&gt;
-
-&lt;p&gt;To set a &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
-
-&lt;p&gt;For other tips, such as using math, see the guide on &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir=.
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
-
-&lt;p&gt;This post was created with Jupyter. The orginal files can be found at &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&#34; target=&#34;_blank&#34;&gt;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now we have the data to train a model. I will be discussing about the model that I built to classify these advertisements in the next article. That is the most interesting part(After that I will  discuss the pipelines that I developed to crawl live data and test them against the model using &lt;a href=&#34;https://scrapyd.readthedocs.io/&#34; target=&#34;_blank&#34;&gt;Scrapyd&lt;/a&gt; , &lt;a href=&#34;https://github.com/scrapy/scrapyd-client&#34; target=&#34;_blank&#34;&gt;Scrapyd-client&lt;/a&gt;, &lt;a href=&#34;https://sendgrid.com/&#34; target=&#34;_blank&#34;&gt;sendGrid&lt;/a&gt; on &lt;a href=&#34;https://bitnami.com/&#34; target=&#34;_blank&#34;&gt;Bitnamy Hosting&lt;/a&gt;). Let me know anything if there is any unclear thing here. Wait for the Dark Art 😀 !&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Academic: the website builder for Hugo</title>
-      <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/post/getting-started/</guid>
+      <title>Keeping Free Heroku app awake for all the time</title>
+      <link>/post/lambda/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/post/lambda/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;color: red;&#34;&gt;(Note:- The post was migrated from the previous blog written on 17th March 2018 &lt;a href=&#34;https://web.archive.org/web/20181116085144/http://sudeepanadeeshan.me/2018/03/continuous-integration-and-deploying-with-github-webhooks&#34; target=&#34;_blank&#34;&gt;web.arvhive.org&lt;/a&gt;)  That was a lossy migration and the images were not be able to recover using webarchive. See what happend to the previous &lt;a href=&#34;http://localhost:1313/post/what_happend_to_previous_blog/&#34; target=&#34;_blank&#34;&gt;blog&lt;/a&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I along with Ciperlabs team (which is a very little start up, started with two of my friends) developed an app for a client which is extracting tweets of a special user. If I go bit deep, we used twitter API for getting the latest tweet of a specific user. In order to that we have to access the timeline of the user and filter the latest tweet among all the tweets.[see – &lt;a href=&#34;https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-user_timeline&#34; target=&#34;_blank&#34;&gt;documentation&lt;/a&gt;]. As the document specifies the API allows only 900 requests in a window of 15 minutes with the user AUTH token. So, we needed to limit our system to send &lt;sup&gt;900&lt;/sup&gt;&amp;frasl;&lt;sub&gt;15&lt;/sub&gt;*60 → 1 request per second. Our server sends 1 requests per second to twitter side to read the latest tweet. We could have used twitter stream API easily, but it had many limitations, so we decided to go with our own implementation.&lt;/p&gt;
+
+&lt;p&gt;Back to the main topic. Building a server (let’s say tweet reader) to grab the latest tweet was just a part of the main project the big picture was to build a transaction automation system. The client wanted to automate the option trade placing on tradestation trading platform.  we deployed the application on Heroku for testing the functionality. As the Heroku free tier has a condition saying the app will be slept after 30 minutes of inactivity[&lt;a href=&#34;https://www.heroku.com/pricing&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;]. It was a really problematics for us to use this as a server which runs for 24*7.&lt;/p&gt;
+
+&lt;p&gt;After bit of a research I could be able to find about AWS lambda. It is a serverless, event driven platform. Serverless shows the current evolution of the hosting applications. Early days if we need to host our application we had to host it by ourselves. Then shared hosting came up where each application must share allocated resources among each other’s. After that using a dedicated virtual machine on a cloud platform became popular. In this case you have to pay for the performance of the virtual machine that you are purchasing. What if you need to process your application for a very limited time like 2 seconds. If you buy a dedicated machine just for this task?  it will be a waste of resources as most of the available commercial plans are either monthly basic or year basis. This is where serverless architecture comes in to play. Basically, you run your small small tasks on somebody else’s machine and pay for the time usage. AWS lambda is a good implementation of serverless architecture. Here my micro task is just to send a http request to my tweet reader server. If I got a dedicated VM or host the application by myself, I have to spend a lot of money. In this case I do it totally free.&lt;/p&gt;
+
+&lt;p&gt;As I had already created AWS student account I started working on Lamda immediately (To use AWS student account it was required to add a credit card). Lambda offers 1 million requests per month in their free tier (see – &lt;a href=&#34;https://aws.amazon.com/lambda/pricing&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;). This free tier of Lamba was more than enough for our application.  As Heroku app closes in each thirty minutes we have to awake the server in    each 30 minutes. So we need only 2* 24 = 48  requests per day and maximum of  48*31 = 1488 per months among the 1 MN free request we could use. Cool.&lt;/p&gt;
+
+&lt;p&gt;Let’s move to the actual works. After you log on to the AWS you can search “Lambda” in AWS services.&lt;/p&gt;
+
+&lt;p&gt;Then we can easily create a new lambda function by clicking “Create Function”&lt;/p&gt;
+
+&lt;p&gt;The required details must put in the following form. I used following setting for the tutorial. After clicking “create function” select “Blueprints” rather than selecting “Author from scratch”&lt;/p&gt;
+
+&lt;p&gt;By searching “lambda-canary” we can find the template that matches for our requirement. By the time the tutorial was written there were 2 lambda-canary functions, one is in python 3 and other one is in python 2.7. I used python 2.7 for the task. After that you have to fill the basic information about the function like name and role.&lt;/p&gt;
+
+&lt;p&gt;Then we must configure cloudwatch-events. It is required to follow syntax mentioned in the  &lt;a href=&#34;https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html&#34; target=&#34;_blank&#34;&gt;documentation&lt;/a&gt; to add the scheduler expression. The rate has set to 5 minutes here as you can see in Schedule Expression section and that follows the syntax of scheduler expression.&lt;/p&gt;
+
+&lt;p&gt;Then we must enable the trigger after creating it.&lt;/p&gt;
+
+&lt;p&gt;After successfully adding enabling the function we have to configure the sample canaray code.&lt;/p&gt;
+
+&lt;p&gt;That configuration can be easily done by setting the environment variables. The site will be the website that we are going to send the http requests. In my case it is Heroku app.  You can add the expected String to be in the page for the “Expected”.&lt;/p&gt;
+
+&lt;p&gt;After adding the relevant environment variables, you just have to create the function. Then you will be redirected to configuration page where you can still change the function. There is another tab called “Monitoring”. There you can see logs of your microservice.&lt;/p&gt;
+
+&lt;p&gt;This provides a various kind of logs on your application. “Jump to matric” shows you a clear expansion of the matrix and “Jump to logs” shows all the logs.&lt;/p&gt;
+
+&lt;p&gt;This is a basic example of using AWS Lambda. This powerful tool can be used to do lots of things. You can try the sample codes and get an understanding about the capabilities of that. Let’s meet with a new post soon.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration with Travis CI</title>
+      <link>/post/ci-cd-compare/</link>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>/post/ci-cd-compare/</guid>
       <description>
 
-&lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color: red;&#34;&gt;&lt;strong&gt;(Note:- The post was migrated from the previous blog written on 17th November 2017 &lt;a href=&#34;https://web.archive.org/web/20181116085111/http://sudeepanadeeshan.me/2017/11/continuous-integration-with-travis-ci&#34; target=&#34;_blank&#34;&gt;web.arvhive.org&lt;/a&gt;). That was a lossy migration and the images were not be able to recover using webarchive. See what happend to the previous &lt;a href=&#34;http://localhost:1313/post/what_happend_to_previous_blog/&#34; target=&#34;_blank&#34;&gt;blog&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34; target=&#34;_blank&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
+&lt;p&gt;After working with Jenkins at Interblocks, I really wanted to try something similar continuous integration tool for works. What is Continuous Integration?. The name itself defines what it is. It is basically a methodology used by the developers when they are working as a team. Whenever a team member commits a change to the repository that they are using, we can verify the new commit by an automated build. We can run some tests on that automated build using scripts. That’s the simplest idea. It will help to identify the mistakes and errors done by the programmers before merging to the branch. Ok fine. Then why TravisCI over jenkins. Though Jenkins seems cool and familiar, as I’m not usually working with JavaEE in daily basis, I wanted to do something related to nodeJs. Is that the only reason?. Not exactly actually Node project can be built with jenkins. But TravisCI is prefered over Jenkins based on some reasons and I’ve listed them below. In my case I got a Free Ticket :D. Student are given the facility to use TravisCI commercial version under the Github Student Pack. Github with the collaboration of some of the industry giants, provides a really good opportunity to try the paid tools free. &lt;a href=&#34;https://education.github.com/pack/&#34; target=&#34;_blank&#34;&gt;Here&lt;/a&gt; is the link and give it a try. I have used Github private repo pack, Namecheap domain pack, digital Ocean pack and planning to use Strip with a future projects.(Also there is another CI tool called Bamboo by atlassian and they are also providing it under their classroom package. Honestly I’ve never Tried it yet).&lt;/p&gt;
+
+&lt;h2 id=&#34;travis-ci-and-jenkins&#34;&gt;Travis CI and  Jenkins.&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Jenkins&lt;/th&gt;
+&lt;th&gt;TravisCI&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Suits for large project&lt;/td&gt;
+&lt;td&gt;Suits for open source projects&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Free&lt;/td&gt;
+&lt;td&gt;Pro version has more features&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Dedicated server is needed(You have to host it )&lt;/td&gt;
+&lt;td&gt;No need of dedicated servers(It is already hosted)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Configuring takes time&lt;/td&gt;
+&lt;td&gt;No need of dedicated servers(It is already hosted)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;# TravisCI&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://travis-ci.com/&#34; target=&#34;_blank&#34;&gt;Travis CI&lt;/a&gt; is a hosted continuous integration and deployment system. As I mentioned before you do not need to host it by yourself you can use it as a SaaS. Like WordPress.com and WordPress.org,There are two versions of it, &lt;a href=&#34;https://travis-ci.com/&#34; target=&#34;_blank&#34;&gt;travis-ci.com&lt;/a&gt; (Travis Pro) for private repositories, and &lt;a href=&#34;https://travis-ci.org/&#34; target=&#34;_blank&#34;&gt;travis-ci.org&lt;/a&gt; for public repositories.&lt;/p&gt;
+
+&lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;
+
+&lt;p&gt;To build a project using TravisCI we have to  have a .travis.yml in our repository. Basically that includes the metadata about the project as well as the scripts that we are hoping to run to test after building the branch. I will show you a one in the demo.  Let’s drive bit deep. There are few common terms in TravisCI and it’s better to be familiarise with them. A deployment is called a job which has several intermediate, sequential tasks called phases and  the main phases would be install,script,deploy those also will be covered in the demo. There is another term called “Build” which implements a group of tasks. To understand “Stage” term have a look at the below image.&lt;/p&gt;
+
+&lt;p&gt;Figure – Stage&lt;/p&gt;
+
+&lt;p&gt;### Process&lt;/p&gt;
+
+&lt;p&gt;First creating a virtual environment for the app. Second cloning the repository into the virtual environment. Build the project. Run the test cases.&lt;/p&gt;
+
+&lt;p&gt;### Supporting Languages&lt;/p&gt;
+
+&lt;p&gt;TravisCI supports a range of languages. Here are some of them. Julia, Objective-C, Perl, Perl6, PHP, Python, R, Ruby, Rust, Scala, Smalltalk, Visual Basic.Android, C, C#, C++, Clojure, Crystal, D, Dart, Erlang, Elixir, F#, Go, Groovy Haskell, Haxe, Java, JavaScript (with Node.js).&lt;/p&gt;
+
+&lt;p&gt;# DEMO&lt;/p&gt;
+
+&lt;p&gt;I’m just trying to deploy a simple nodeJS application using TravisCI. For this I’m going to use travis-ci.com. As I mentioned before, first of all I have to write a .travis.yml to my repo and commit it . This is my sample yml file&lt;/p&gt;
+
+&lt;p&gt;.travis.yml&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/Sudeepa14/bcda5ca3dc6ebac0a0705d44263f30ac.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;If there is not such a command TravisCI will automatically run “npm test” command which is specified in the “package.json” file. This command will be created automatically when you are initiating npm. This is it&lt;/p&gt;
+
+&lt;p&gt;Figure – Package.json&lt;/p&gt;
+
+&lt;p&gt;So far so good but why It is not building :/ .After doing a bit diving, I found the reason. Whenever a phase returns a non zero exit code, the TravisCI will think that as an “Ërror” . The default code is “”1”, So we have to change it to “0”. So here is my final result.&lt;/p&gt;
+
+&lt;p&gt;Figure – Build Success&lt;/p&gt;
+
+&lt;p&gt;Hooorayyyyyyyyyyyyyyyyyyyyyyyyyyyy&lt;/p&gt;
+
+&lt;p&gt;So it succeeded, But by changing only the value to “1”, can we guarantee that the project built successfully? No for that you have to run real test cases. But for this one I did something else. I wrote a script in travis.yml to start the node server.&lt;/p&gt;
+
+&lt;p&gt;Figure – Running the node server.&lt;/p&gt;
+
+&lt;p&gt;The server started perfectly(that means the project is successfully built) but did not get the green sign. It was running for around 10 minutes and gave a build failure. Actually this failure doesn’t mean that we did something wrong. Just running the server will not give neither  1 nor 0 at the end of the execution. So t
+he test runs for the previously configured time and then stops after getting a timeout. That why it get failed. So we can be happy for now.&lt;/p&gt;
+
+&lt;h2 id=&#34;important-facts&#34;&gt;Important facts&lt;/h2&gt;
+
+&lt;p&gt;When you do a change in github, sometimes it won’t  sync with travisCI for manual building. For this reason I recommend to sync manually every time when you do a change to the code For that follow below steps.&lt;/p&gt;
+
+&lt;p&gt;In the left corner tap the plus sign&lt;/p&gt;
+
+&lt;p&gt;Figure – Select Syncing&lt;/p&gt;
+
+&lt;p&gt;Then tap the syncing button(IF you hover over you will see the last synced time)&lt;/p&gt;
+
+&lt;p&gt;Figure – Sync&lt;/p&gt;
+
+&lt;h1 id=&#34;cool-features&#34;&gt;Cool features&lt;/h1&gt;
+
+&lt;h2 id=&#34;adding-to-build-status&#34;&gt;Adding to build status&lt;/h2&gt;
+
+&lt;p&gt;You may have seen some badges in the Readme files in some Github repositories saying the build is passed. It gives some kind of good vibes to the person who is going to use your code.&lt;/p&gt;
+
+&lt;p&gt;Figure Build Passing tag in readme.md&lt;/p&gt;
+
+&lt;p&gt;To add this. First tap on the build sign on the top to the page&lt;/p&gt;
+
+&lt;p&gt;Figure – On the top of the project&lt;/p&gt;
+
+&lt;p&gt;Then you get the image links related to your build.&lt;/p&gt;
+
+&lt;p&gt;Figure – Image links related to the build&lt;/p&gt;
+
+&lt;p&gt;Go to the readme.md and edit the link as follows.&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/Sudeepa14/d30d821db79c48a76444800d57071368.js&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;verifying-the-commits&#34;&gt;Verifying the commits.&lt;/h2&gt;
+
+&lt;p&gt;Wait a second. Why were we going to use CI in the first place??. To automate the build right? Do you see anything automated here. No. That is we did this for just for a demo. Actually each time when you are committing Travis CI will automatically build them. Actually this manually building that we just did is a beta feature that Travis is providing. If you select any file in your Github repo and go it’s its history you will see something like this.&lt;/p&gt;
+
+&lt;p&gt;Figure -Auto building&lt;/p&gt;
+
+&lt;p&gt;It will show the end result of your builds. Saying whether they passed or not. These will be available for every pull request too. So you can be sure about the code that you are going to merge to your repository. That’s all for today. Will meet with a new article soon. Bye.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Face Detection, Video Streaming with Python, OpenCV, Django – Part 1</title>
+      <link>/post/django/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/post/django/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;color: red;&#34;&gt;(Note:- The post was migrated from the previous blog written on 26th August 2017 &lt;a href=&#34;https://web.archive.org/web/20181206200514/http://sudeepanadeeshan.me/2017/08/hello-world&#34; target=&#34;_blank&#34;&gt;web.arvhive.org&lt;/a&gt;). That was a lossy migration and the images were not be able to recover using webarchive.  See what happend to the previous &lt;a href=&#34;http://localhost:1313/post/what_happend_to_previous_blog/&#34; target=&#34;_blank&#34;&gt;blog&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Hi folks. I got to dive into a totally different Library last week. It is non other than OpenCV . While I was working as an intern at interblocks one of my tech leads said he never tried to stream a video between two machines, Actually he wanted to transfer the stream only when someone is in front of the computer. It is not a work relate one, but just a random idea. So I wanted to give it a try. Here is the basic diagram.&lt;/p&gt;
+
+&lt;p&gt;As the Face Detector and End User are talking using REST API I thought to use Django as the web frame work and openCV as the face detection library. I’ve never used both of them before. So I decided to go with those as a learning task.&lt;/p&gt;
+
+&lt;p&gt;Django is a high-level Python Web framework. This is the basic setup for a app in Django. I followed the &lt;a href=&#34;https://docs.djangoproject.com/en/2.0/intro/tutorial01/&#34; target=&#34;_blank&#34;&gt;official documentation&lt;/a&gt; . Here is a highlight of it.&lt;/p&gt;
+
+&lt;h1 id=&#34;install-python&#34;&gt;Install Python.&lt;/h1&gt;
+
+&lt;h2 id=&#34;install-a-python-virtual-environment&#34;&gt;Install a Python Virtual Environment.&lt;/h2&gt;
+
+&lt;h3 id=&#34;to-install-the-package-manager&#34;&gt;To install the package manager&lt;/h3&gt;
+
+&lt;p&gt;Download &lt;a href=&#34;https://bootstrap.pypa.io/get-pip.py&#34; target=&#34;_blank&#34;&gt;get-pip.py&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Go to folder containing get-pip.py and run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;python get-pip.py
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;installing-the-virtual-environment&#34;&gt;Installing the virtual environment&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;pip install virtualen
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What virtual environment do is it create a virtual system which is almost like the normal system and it  prevents any harm that could be caused because of the programme development  The virtual                 environment. Here you can find an explanation about the importance of the virtual environment very clearly, just have a look at &lt;a href=&#34;https://stackoverflow.com/questions/39055728/importance-of-virtual-environment-setup-for-django-with-python/39055882#39055882&#34; target=&#34;_blank&#34;&gt;it&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-the-project-folder&#34;&gt;Creating the Project Folder&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;mkdir env
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;go-to-the-folder-and-create-a-new-project&#34;&gt;Go to the folder and create a new project&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;cd env
+Virtualenv mysite
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;active-the-newly-created-environment&#34;&gt;Active the newly created environment&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;cd env\mysite\scripts\activate
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will change the command line as follows.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;(env)C:\Users\username\Documents\mysite&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now the environment is up and running we can develop ord project on top of that&lt;/p&gt;
+
+&lt;h2 id=&#34;install-django&#34;&gt;Install Django.&lt;/h2&gt;
+
+&lt;p&gt;This will install the latest version of django and you can specify the version by,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;pip install django==x.y.z
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can cross check the installation by running the python interpreter here and checking the python version here.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;&amp;gt;&amp;gt;&amp;gt;Python
+&amp;gt;&amp;gt;&amp;gt;Import Django dJ
+&amp;gt;&amp;gt;&amp;gt;DJ.get_version()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Back to the topic. Now we have to starting a new Project. A project can hold multiple apps FYI 😀&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;django-admin startproject mysite
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will automatically create  a new folder with the following structure.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;mysite/
+  manage.py 
+  mysite/
+    __init__.py 
+    settings.py 
+    urls.py 
+    wsgi.py
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As Django automatically creates some applications by defaults like Admin Programme , User Management , Authentication we have to set up a database in order to work with them.&lt;/p&gt;
+
+&lt;p&gt;Direct to mysite. And run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;python manage.py migrate
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;again to make sure that you are in the newly created project folder. In  “mysite” you can easily use CD command (in case you are confused with the running environment).&lt;/p&gt;
+
+&lt;p&gt;All set!!! Now you can run the server you just created.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;python manage.py runserver
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you want to change the server,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;python manage.py runserver 8080
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you have done everything right it will look like&lt;/p&gt;
+
+&lt;h2 id=&#34;creating-your-first-app&#34;&gt;Creating your first app.&lt;/h2&gt;
+
+&lt;p&gt;Go to the project directory where your manage.py is and run the following command.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;python manage.py startapp myfirstapp
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;testing-the-app&#34;&gt;Testing the app&lt;/h3&gt;
+
+&lt;p&gt;As the django &lt;a href=&#34;https://docs.djangoproject.com/en/2.0/intro/tutorial01/&#34; target=&#34;_blank&#34;&gt;Doc&lt;/a&gt; says,&lt;/p&gt;
+
+&lt;p&gt;In views.py&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from django.http import HttpResponse
+def index(request):
+    return HttpResponse(&amp;quot;Hello, world. You&#39;re at the polls index.&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And in url.py&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from django.conf.urls import url
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then go back to the the project (mysite ) in this case, /mysite/urls.py&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+    url(r&#39;^myfirstapp/&#39;, include(&#39;myfirstapp.urls&#39;)),
+    url(r&#39;^admin/&#39;, admin.site.urls),
+]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is the very basic set up of a Django app. I will share the web app for the solution using Django in the next post.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Continuous Integration and Deploying with Github Webhooks</title>
+      <link>/post/ci-cd/</link>
+      <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>/post/ci-cd/</guid>
+      <description>
+
+&lt;p&gt;&lt;span style=&#34;color: red;&#34;&gt;&lt;strong&gt;(Note:- The post was migrated from the previous blog written on 17th March 2018 &lt;a href=&#34;https://web.archive.org/web/20181116085144/http://sudeepanadeeshan.me/2018/03/continuous-integration-and-deploying-with-github-webhooks&#34; target=&#34;_blank&#34;&gt;web.arvhive.org&lt;/a&gt;). That was a lossy migration and the images were not be able to recover using webarchive. See What Happend to the previous &lt;a href=&#34;http://localhost:1313/post/what_happend_to_previous_blog/&#34; target=&#34;_blank&#34;&gt;blog&lt;/a&gt;&lt;/strong&gt; &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Last few days I spent digging into Continuous integration and delivering. I also have published a post about  CI with Travis CI before. This time I wanted to run my own CI system. Why? Well that Idea came to me when we were developing a project in university. We had to develop an app to collect voice samples in Sinhala language from the public for the project and we developed a simple responsive mobile app for that.  You can find it &lt;a href=&#34;https://sinhalaassistant.projects.mrt.ac.lk/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.(yeah it is a simple app, why the hack you made it https ? it a simple app!! :D  unfortunately  we had to get an SSL to use microphone via the browser otherwise browsers won’t let us to use the mic. I used my free student SSL provided by &lt;a href=&#34;https://www.namecheap.com/&#34; target=&#34;_blank&#34;&gt;Namecheap&lt;/a&gt; under &lt;a href=&#34;https://education.github.com/pack&#34; target=&#34;_blank&#34;&gt;Github Student Pack Promotion&lt;/a&gt;). I wrote the back end and it had only few functionalities (saving a voice sample on the &lt;a href=&#34;https://disk.yandex.com/&#34; target=&#34;_blank&#34;&gt;Yandex drive&lt;/a&gt; and the local server) and they had been well tested. The front-end made the trouble here (yes yes front ends are trouble makers 😀 ). It was a react app. We developed the application while it was running on the server. While we were doing QA we had to changes every time.  whenever we found a new bug/improvement we needed to,&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Commit the change to Github.&lt;/li&gt;
+&lt;li&gt;Log on to the server using Putty.&lt;/li&gt;
+&lt;li&gt;Change the current directory.&lt;/li&gt;
+&lt;li&gt;Pull the repository.&lt;/li&gt;
+&lt;li&gt;Build the react build&lt;/li&gt;
+&lt;li&gt;Restart the back end&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Doing this for a simple typo was really annoying. :/ So I wanted to AUTOMATE it! While I was reading about  Travis CI and Ansible (a Deployment automation tool) I realized the important of Webhooks. Basically it is an HTTP callback which notify to an endpoint when an event occurs. &lt;a href=&#34;https://developer.github.com/webhooks/securing/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; also has this facility.&lt;/p&gt;
+
+&lt;p&gt;For the web app we all contributed was not owned by me. So I had to use one of my own repo. I used a react application I’ve hosted on Github called youtubeDownloader ( It is a simple application which is used to save youtube video files in &lt;a href=&#34;https://mega.nz/&#34; target=&#34;_blank&#34;&gt;Mega clould&lt;/a&gt;– this give free 50GB storage with a super encryption facility). For the testing I used my droplet on &lt;a href=&#34;https://www.digitalocean.com/&#34; target=&#34;_blank&#34;&gt;DigitalOcean&lt;/a&gt; which I bought using free credit that I got from&lt;a href=&#34;https://education.github.com/pack&#34; target=&#34;_blank&#34;&gt;Github Student Pack Promotion&lt;/a&gt;. My server is a Ubuntu 16.04.3 having 1GB RAM. Back to the topic. Here is overall architecture.&lt;/p&gt;
+
+&lt;p&gt;The started configuring the webhook first. You can configure this in Settings à Webhook à Add Webhook .(password confirmation step will be added here.&lt;/p&gt;
+
+&lt;p&gt;Then you will have to configure the following settings.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Payload URL&lt;/strong&gt; – This is the endpoint of your listening server. My one was in following format – &lt;a href=&#34;http://myip:8081/api/newPull&#34; target=&#34;_blank&#34;&gt;http://myip:8081/api/newPull&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Content type&lt;/strong&gt; – This sets the format of the content you are receiving. This can be either application/json or application/x-www-form-urlencoded. I personally prefer application/json as it is really easy to access.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Secret&lt;/strong&gt; – This a really important and I will explain the important with the implementation. Just think this is some kind of an encryption key. Basically all the data will be encrypted using the key.&lt;/p&gt;
+
+&lt;p&gt;The I chose &lt;strong&gt;“just the push event”&lt;/strong&gt; as I only needed to automate things when a push happens. Also do not forget to tick the “Active” checkbox.&lt;/p&gt;
+
+&lt;p&gt;Now we have to configure the server to listen for  event notifications and the entered end point in the server.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/Sudeepa14/manualCI-CD&#34; target=&#34;_blank&#34;&gt;Here&lt;/a&gt; is the server. It is just a simple Nodejs server running on ubuntu.  The following endpoint is the one that the pull request is sent by Github.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;router.post(&#39;/newPull&#39;,function(req,res){
+....
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now the basics of cryptography comes in to the play. Remember the “secret” that you entered on Github repo? The requset data comes from Github is encrypted by the using HMAC . Github takes &lt;a href=&#34;https://en.wikipedia.org/wiki/SHA-1&#34; target=&#34;_blank&#34;&gt;SHA1&lt;/a&gt;  hash function and the “Secret” you entered and the response body data to generate &lt;a href=&#34;/https://en.wikipedia.org/wiki/HMAC&#34;&gt;HMAC&lt;/a&gt; digest.This encryption helps to protect data integrity and the verify authentication. Github sends the HMAC they calculated as the field “X-Hub-Signature” inside the post request header. We must implement a way to regenerated the HMAC signature from our side too using post request body, secret key and sha1 hash function. If those to matches we can verify the request.&lt;/p&gt;
+
+&lt;p&gt;I created .env file containing the session secret as follows. Then added .env to gitignore file to stop it is committed to github repository.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;SECRET_TOKEN=myToken
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Installing ‘dotenv’ node module helps to import environment variables in nodeJs. We just have to import it as,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;require(&#39;dotenv&#39;).config()
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We can access them as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;process.env.SECRET_TOKEN
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is how we can implement HMAC generation from our side.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;
+router.post(&#39;/newPull&#39;,function(req,res){
+
+  var hmac, signature;
+  //configuring hash function using sha1 and secret. 
+  hmac = crypto.createHmac(&amp;quot;sha1&amp;quot;, process.env.SECRET_TOKEN);
+  //generating hash using request body 
+  hmac.update(JSON.stringify(req.body));
+  // format it to github format
+  signature =&amp;quot;sha1=&amp;quot;+hmac.digest(&amp;quot;hex&amp;quot;);
+  //validating 
+  if(signature===req.headers[&#39;x-hub-signature&#39;]){
+    //both the signatures match continue CI/CD
+    CI.builder(res);
+  }
+  else{
+    res.sendStatus(200);    
+  }
+});
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The we can run our server and test configuration. You can see a “Recent Delivery” section under your webhook on Github. This tells whether your end point responded to the webhook post request or not. If yes you can see a 200 -ok response with green colour. If there is something wrong it will get red.&lt;/p&gt;
+
+&lt;p&gt;You can use “Redeliver” to deliver the payload again for testing.&lt;/p&gt;
+
+&lt;p&gt;(Please consider the time out of the github request is low. So you have to take care of the responding to github request before running your server CI scripts. Otherwise logs will be in red.)&lt;/p&gt;
+
+&lt;p&gt;Now the notifying part is properly configured so we have to focus on automation ♥♥♥.  Here is the script file that does the automation.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;git -C ../youtubeDownloader/react/ pull origin master
+
+sudo npm run build --prefix ../youtubeDownloader/react/
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The first line  pulling the github repository. But why – C ? We are runing this script while not being in the relevant git directory. So we have to point git that this is the directory that should get updated and check the .git directory in the path mentioned.   Also it is essential to save your github credentials to run the aboue. Otherwise a authentication  step may be added. It makes automation harder.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;git config credential.helper store
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The second one also does something similar.  It points to the directory path to npm using –prefix flag. “npm run build” is the script that we use to build react build directory. sudo may need to use to avoid permission issues.&lt;/p&gt;
+
+&lt;p&gt;after creating the above script file as “autoBuilder.sh” inside the server. Now we have to give sufficient permimissions&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;chmod +x autoBuilder.sh
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we have a method to be notified and a script to automate. Now what. well a little linkage left. But how? If I simply say we need to find a way to run a shell script when a new request comes from Github. We can use &lt;a href=&#34;https://www.npmjs.com/package/shelljs&#34; target=&#34;_blank&#34;&gt;ShellJs&lt;/a&gt; package in npm for that. It allowed us to run terminal command using Node. ShellJs API allows to run basic shell commands like cp, cd etc. Also we can execute a shell command like,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;shell.exec(&amp;quot;sudo ./autoBuilder.sh&amp;quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I developed a separate controller called “CI.js” for running that. Here is it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;var shell = require(&#39;shelljs&#39;);
+
+exports.builder=function(res){
+    shell.echo(&#39;this is from shelljs Module&#39;);
+    //sending the response for github post request as it gets time out if we wait until automation.
+    res.sendStatus(200);
+    shell.exec(&amp;quot;sudo ./autoBuilder.sh&amp;quot;); 
+
+}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(I have placed my “autoBuilder.sh” inside the listening server directory root).&lt;/p&gt;
+
+&lt;p&gt;This is how my console seems when a I added a new “readme.md” file to the master.&lt;/p&gt;
+
+&lt;h2 id=&#34;few-more-things&#34;&gt;Few More things.&lt;/h2&gt;
+
+&lt;p&gt;In you use&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;node server.js
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;npm start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;commands to start the node server of the application. It won’t adapt to the changes happen in the build file. So we have to take care of that too. We can use &lt;a href=&#34;https://www.npmjs.com/package/nodemon&#34; target=&#34;_blank&#34;&gt;nodemon&lt;/a&gt; npm package to listen for the file changes on the server.  It can be simply installed as follows.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;npm install -g nodemon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;First change the current directory to the server directory of the application. Then start a new window using screen.  (Normally we use “screen” tool to start services on the server. it lets us to keep running the service while we doing something else on the server. here is a &lt;a href=&#34;https://www.digitalocean.com/community/tutorials/how-to-install-and-use-screen-on-an-ubuntu-cloud-server&#34; target=&#34;_blank&#34;&gt;guideline&lt;/a&gt; from digitalOcean for screen tool) .&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;screen
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;nodemon server.js
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now press to leave the screen.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;CTRL + a + d
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;what-s-more&#34;&gt;What’s More?&lt;/h2&gt;
+
+&lt;p&gt;This seems easy and simple. But there are few drawbacks with this approach. Yet we can address them efficiently.&lt;/p&gt;
+
+&lt;p&gt;The build that we deploy on the live environment is not properly tested.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;👉 &lt;a href=&#34;#install&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;📚 &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;View the &lt;strong&gt;documentation&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💬 &lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Ask a question&lt;/strong&gt; on the forum&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;👥 &lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34;&gt;Chat with the &lt;strong&gt;community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🐦 Twitter: &lt;a href=&#34;https://twitter.com/source_themes&#34; target=&#34;_blank&#34;&gt;@source_themes&lt;/a&gt; &lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34;&gt;@GeorgeCushen&lt;/a&gt; &lt;a href=&#34;https://twitter.com/search?q=%23MadeWithAcademic&amp;amp;src=typd&#34; target=&#34;_blank&#34;&gt;#MadeWithAcademic&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💡 &lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;⬆️ &lt;strong&gt;Updating?&lt;/strong&gt; View the &lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;❤ &lt;strong&gt;Support development&lt;/strong&gt; of Academic:
-
-&lt;ul&gt;
-&lt;li&gt;☕️ &lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Donate a coffee&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💵 &lt;a href=&#34;https://www.patreon.com/cushen&#34; target=&#34;_blank&#34;&gt;Become a backer on &lt;strong&gt;Patreon&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🖼️ &lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34;&gt;Decorate your laptop or journal with an Academic &lt;strong&gt;sticker&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;👕 &lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34;&gt;Wear the &lt;strong&gt;T-shirt&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;👩‍💻 &lt;a href=&#34;https://sourcethemes.com/academic/docs/contribute/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Contribute&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Building the build directory only on a &lt;strong&gt;test environment&lt;/strong&gt; when a commit comes.&lt;/li&gt;
+&lt;li&gt;Testing the build using “npm test”. (we can write scripts for testing under “test” script in package.json)&lt;/li&gt;
+&lt;li&gt;If it passes put deploy it to the production(simply coping), else reject.
+The server restarts each and every time when we are committing, even for minor commits!  We can implement a method to filter out the commits  notification and build for only specific commits.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;We don’t manages the releases here. That is really bad practise to do if we are deploy something serious. Deployment automation tools like Ansible, Chef could help for these problems.&lt;/p&gt;
 
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; data-caption=&#34;Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;&#34; &gt;&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
-
-&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-
-&lt;p&gt;Academic comes with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Alternatively, visitors can  choose their preferred mode - click the sun/moon icon in the top right of the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt; to see it in action! Day/night mode can also be disabled by the site admin in &lt;code&gt;params.toml&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully &lt;a href=&#34;https://sourcethemes.com/academic/docs/customization/#custom-theme&#34; target=&#34;_blank&#34;&gt;customizable&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34;&gt;Academic Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-scripts&#34; target=&#34;_blank&#34;&gt;Academic Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of Academic&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-
-&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-git&#34; target=&#34;_blank&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-zip&#34; target=&#34;_blank&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Then &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34;&gt;personalize and deploy your new site&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;View the Update Guide&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; to help keep track of &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34;&gt;updates&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-
-&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+&lt;p&gt;That’s it for this post. Hope you learned something out of this.  Thanks for reading.&lt;/p&gt;
 </description>
     </item>
     
