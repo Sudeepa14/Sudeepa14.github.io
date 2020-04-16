@@ -91,6 +91,42 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163781755-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-163781755-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
@@ -709,6 +745,23 @@
     
     
     
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://gist.github.com/sudeepa14" target="_blank" rel="noopener">
+        <i class="fab fa-github-alt"></i>
+      </a>
+    </li>
+  
+    
+    
+    
     
     
     
@@ -718,6 +771,23 @@
     <li>
       <a href="https://scholar.google.com/citations?user=NTbUVMUAAAAJ&amp;hl=en#d=gs_hdr_drw" target="_blank" rel="noopener">
         <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=NTbUVMUAAAAJ&amp;hl=en#d=gs_hdr_drw" target="_blank" rel="noopener">
+        <i class="fab fa-stack-overflow"></i>
       </a>
     </li>
   
