@@ -24,7 +24,42 @@
   
   <url>
     <loc>/authors/admin/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2020-04-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-04-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/ds/</loc>
+    <lastmod>2020-04-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ds-python-ml/</loc>
+    <lastmod>2020-04-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/ds/</loc>
+    <lastmod>2020-04-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-04-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -33,27 +68,7 @@
   </url>
   
   <url>
-    <loc>/authors/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/demo/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2019-12-20T00:00:00+00:00</lastmod>
   </url>
   

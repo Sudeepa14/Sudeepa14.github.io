@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="CI/CD with Github Webhooks">
+  <meta name="description" content="Data Analysis with Python">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/ci-cd/">
+  <link rel="alternate" hreflang="en-us" href="/post/ds/">
 
   
 
@@ -136,7 +136,7 @@
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/post/ci-cd/">
+  <link rel="canonical" href="/post/ds/">
 
   
   
@@ -149,15 +149,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Sudeepa Nadeeshan">
-  <meta property="og:url" content="/post/ci-cd/">
-  <meta property="og:title" content="Continuous Integration and Deploying with Github Webhooks | Sudeepa Nadeeshan">
-  <meta property="og:description" content="CI/CD with Github Webhooks"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/post/ds/">
+  <meta property="og:title" content="Helping a Gym Rat to choose a Neighbourhood to live in Manhattan | Sudeepa Nadeeshan">
+  <meta property="og:description" content="Data Analysis with Python"><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2017-03-17T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-04-30T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2017-03-17T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-04-30T00:00:00&#43;00:00">
   
 
   
@@ -183,12 +183,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/post/ci-cd/"
+    "@id": "/post/ds/"
   },
-  "headline": "Continuous Integration and Deploying with Github Webhooks",
+  "headline": "Helping a Gym Rat to choose a Neighbourhood to live in Manhattan",
   
-  "datePublished": "2017-03-17T00:00:00Z",
-  "dateModified": "2017-03-17T00:00:00Z",
+  "datePublished": "2020-04-30T00:00:00Z",
+  "dateModified": "2020-04-30T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -203,7 +203,7 @@
       "url": "/img/icon-512.png"
     }
   },
-  "description": "CI/CD with Github Webhooks"
+  "description": "Data Analysis with Python"
 }
 </script>
 
@@ -221,7 +221,7 @@
 
 
 
-  <title>Continuous Integration and Deploying with Github Webhooks | Sudeepa Nadeeshan</title>
+  <title>Helping a Gym Rat to choose a Neighbourhood to live in Manhattan | Sudeepa Nadeeshan</title>
 
 </head>
 
@@ -474,10 +474,10 @@
   
   
 <div class="article-container pt-3">
-  <h1>Continuous Integration and Deploying with Github Webhooks</h1>
+  <h1>Helping a Gym Rat to choose a Neighbourhood to live in Manhattan</h1>
 
   
-  <p class="page-subtitle">CI/CD</p>
+  <p class="page-subtitle">Capstone Project Summary.</p>
   
 
   
@@ -508,7 +508,7 @@
     
       
     
-    Mar 17, 2017
+    Apr 30, 2020
   </span>
   
 
@@ -517,7 +517,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    8 min read
+    1 min read
   </span>
   
 
@@ -529,7 +529,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/demo/">Demo</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/categories/ds/">DS</a></span>
   
 
 </div>
@@ -557,189 +557,12 @@
   <div class="article-container">
 
     <div class="article-style">
-      
-
-<p><span style="color: red;"><strong>(Note:- The post was migrated from the previous blog written on 17th March 2018 <a href="https://web.archive.org/web/20181116085144/http://sudeepanadeeshan.me/2018/03/continuous-integration-and-deploying-with-github-webhooks" target="_blank">web.arvhive.org</a>). That was a lossy migration and the images were not be able to recover using webarchive. See What Happend to the previous <a href="http://localhost:1313/post/what_happend_to_previous_blog/" target="_blank">blog</a></strong> </span></p>
-
-<p>Last few days I spent digging into Continuous integration and delivering. I also have published a post about  CI with Travis CI before. This time I wanted to run my own CI system. Why? Well that Idea came to me when we were developing a project in university. We had to develop an app to collect voice samples in Sinhala language from the public for the project and we developed a simple responsive mobile app for that.  You can find it <a href="https://sinhalaassistant.projects.mrt.ac.lk/" target="_blank">here</a>.(yeah it is a simple app, why the hack you made it https ? it a simple app!! :D  unfortunately  we had to get an SSL to use microphone via the browser otherwise browsers won’t let us to use the mic. I used my free student SSL provided by <a href="https://www.namecheap.com/" target="_blank">Namecheap</a> under <a href="https://education.github.com/pack" target="_blank">Github Student Pack Promotion</a>). I wrote the back end and it had only few functionalities (saving a voice sample on the <a href="https://disk.yandex.com/" target="_blank">Yandex drive</a> and the local server) and they had been well tested. The front-end made the trouble here (yes yes front ends are trouble makers 😀 ). It was a react app. We developed the application while it was running on the server. While we were doing QA we had to changes every time.  whenever we found a new bug/improvement we needed to,</p>
+      <p>The article has been posted on Medium Platform. It has two parts. Please read,</p>
 
 <ol>
-<li>Commit the change to Github.</li>
-<li>Log on to the server using Putty.</li>
-<li>Change the current directory.</li>
-<li>Pull the repository.</li>
-<li>Build the react build</li>
-<li>Restart the back end</li>
+<li>Part 1 - <a href="https://medium.com/@Sudeepa/helping-a-gym-rat-to-choose-a-neighborhood-to-live-in-manhattan-part-1-1cac158c0cb4" target="_blank">Helping a Gym Rat to choose a Neighbourhood to live in Manhattan - Part 1</a></li>
+<li>Part 2 -<a href="https://medium.com/@Sudeepa/helping-a-gym-rat-to-choose-a-neighborhood-to-live-in-manhattan-part-2-15511aee622f" target="_blank">Helping a Gym Rat to choose a Neighbourhood to live in Manhattan - Part 2</a></li>
 </ol>
-
-<p>Doing this for a simple typo was really annoying. :/ So I wanted to AUTOMATE it! While I was reading about  Travis CI and Ansible (a Deployment automation tool) I realized the important of Webhooks. Basically it is an HTTP callback which notify to an endpoint when an event occurs. <a href="https://developer.github.com/webhooks/securing/" target="_blank">Github</a> also has this facility.</p>
-
-<p>For the web app we all contributed was not owned by me. So I had to use one of my own repo. I used a react application I’ve hosted on Github called youtubeDownloader ( It is a simple application which is used to save youtube video files in <a href="https://mega.nz/" target="_blank">Mega clould</a>– this give free 50GB storage with a super encryption facility). For the testing I used my droplet on <a href="https://www.digitalocean.com/" target="_blank">DigitalOcean</a> which I bought using free credit that I got from<a href="https://education.github.com/pack" target="_blank">Github Student Pack Promotion</a>. My server is a Ubuntu 16.04.3 having 1GB RAM. Back to the topic. Here is overall architecture.</p>
-
-<p>The started configuring the webhook first. You can configure this in Settings à Webhook à Add Webhook .(password confirmation step will be added here.</p>
-
-<p>Then you will have to configure the following settings.</p>
-
-<p><strong>Payload URL</strong> – This is the endpoint of your listening server. My one was in following format – <a href="http://myip:8081/api/newPull" target="_blank">http://myip:8081/api/newPull</a></p>
-
-<p><strong>Content type</strong> – This sets the format of the content you are receiving. This can be either application/json or application/x-www-form-urlencoded. I personally prefer application/json as it is really easy to access.</p>
-
-<p><strong>Secret</strong> – This a really important and I will explain the important with the implementation. Just think this is some kind of an encryption key. Basically all the data will be encrypted using the key.</p>
-
-<p>The I chose <strong>“just the push event”</strong> as I only needed to automate things when a push happens. Also do not forget to tick the “Active” checkbox.</p>
-
-<p>Now we have to configure the server to listen for  event notifications and the entered end point in the server.</p>
-
-<p><a href="https://github.com/Sudeepa14/manualCI-CD" target="_blank">Here</a> is the server. It is just a simple Nodejs server running on ubuntu.  The following endpoint is the one that the pull request is sent by Github.</p>
-
-<pre><code class="language-javascript">router.post('/newPull',function(req,res){
-....
-}
-</code></pre>
-
-<p>Now the basics of cryptography comes in to the play. Remember the “secret” that you entered on Github repo? The requset data comes from Github is encrypted by the using HMAC . Github takes <a href="https://en.wikipedia.org/wiki/SHA-1" target="_blank">SHA1</a>  hash function and the “Secret” you entered and the response body data to generate <a href="/https://en.wikipedia.org/wiki/HMAC">HMAC</a> digest.This encryption helps to protect data integrity and the verify authentication. Github sends the HMAC they calculated as the field “X-Hub-Signature” inside the post request header. We must implement a way to regenerated the HMAC signature from our side too using post request body, secret key and sha1 hash function. If those to matches we can verify the request.</p>
-
-<p>I created .env file containing the session secret as follows. Then added .env to gitignore file to stop it is committed to github repository.</p>
-
-<pre><code class="language-javascript">SECRET_TOKEN=myToken
-}
-</code></pre>
-
-<p>Installing ‘dotenv’ node module helps to import environment variables in nodeJs. We just have to import it as,</p>
-
-<pre><code class="language-javascript">require('dotenv').config()
-}
-</code></pre>
-
-<p>We can access them as</p>
-
-<pre><code class="language-javascript">process.env.SECRET_TOKEN
-}
-</code></pre>
-
-<p>This is how we can implement HMAC generation from our side.</p>
-
-<pre><code class="language-javascript">
-router.post('/newPull',function(req,res){
-
-  var hmac, signature;
-  //configuring hash function using sha1 and secret. 
-  hmac = crypto.createHmac(&quot;sha1&quot;, process.env.SECRET_TOKEN);
-  //generating hash using request body 
-  hmac.update(JSON.stringify(req.body));
-  // format it to github format
-  signature =&quot;sha1=&quot;+hmac.digest(&quot;hex&quot;);
-  //validating 
-  if(signature===req.headers['x-hub-signature']){
-    //both the signatures match continue CI/CD
-    CI.builder(res);
-  }
-  else{
-    res.sendStatus(200);    
-  }
-});
-
-}
-</code></pre>
-
-<p>The we can run our server and test configuration. You can see a “Recent Delivery” section under your webhook on Github. This tells whether your end point responded to the webhook post request or not. If yes you can see a 200 -ok response with green colour. If there is something wrong it will get red.</p>
-
-<p>You can use “Redeliver” to deliver the payload again for testing.</p>
-
-<p>(Please consider the time out of the github request is low. So you have to take care of the responding to github request before running your server CI scripts. Otherwise logs will be in red.)</p>
-
-<p>Now the notifying part is properly configured so we have to focus on automation ♥♥♥.  Here is the script file that does the automation.</p>
-
-<pre><code class="language-shell">git -C ../youtubeDownloader/react/ pull origin master
-
-sudo npm run build --prefix ../youtubeDownloader/react/
-}
-</code></pre>
-
-<p>The first line  pulling the github repository. But why – C ? We are runing this script while not being in the relevant git directory. So we have to point git that this is the directory that should get updated and check the .git directory in the path mentioned.   Also it is essential to save your github credentials to run the aboue. Otherwise a authentication  step may be added. It makes automation harder.</p>
-
-<pre><code class="language-shell">git config credential.helper store
-}
-</code></pre>
-
-<p>The second one also does something similar.  It points to the directory path to npm using –prefix flag. “npm run build” is the script that we use to build react build directory. sudo may need to use to avoid permission issues.</p>
-
-<p>after creating the above script file as “autoBuilder.sh” inside the server. Now we have to give sufficient permimissions</p>
-
-<pre><code class="language-shell">chmod +x autoBuilder.sh
-}
-</code></pre>
-
-<p>Now we have a method to be notified and a script to automate. Now what. well a little linkage left. But how? If I simply say we need to find a way to run a shell script when a new request comes from Github. We can use <a href="https://www.npmjs.com/package/shelljs" target="_blank">ShellJs</a> package in npm for that. It allowed us to run terminal command using Node. ShellJs API allows to run basic shell commands like cp, cd etc. Also we can execute a shell command like,</p>
-
-<pre><code class="language-shell">shell.exec(&quot;sudo ./autoBuilder.sh&quot;);
-}
-</code></pre>
-
-<p>I developed a separate controller called “CI.js” for running that. Here is it.</p>
-
-<pre><code class="language-shell">var shell = require('shelljs');
-
-exports.builder=function(res){
-    shell.echo('this is from shelljs Module');
-    //sending the response for github post request as it gets time out if we wait until automation.
-    res.sendStatus(200);
-    shell.exec(&quot;sudo ./autoBuilder.sh&quot;); 
-
-}
-}
-</code></pre>
-
-<p>(I have placed my “autoBuilder.sh” inside the listening server directory root).</p>
-
-<p>This is how my console seems when a I added a new “readme.md” file to the master.</p>
-
-<h2 id="few-more-things">Few More things.</h2>
-
-<p>In you use</p>
-
-<pre><code class="language-shell">node server.js
-</code></pre>
-
-<p>or</p>
-
-<pre><code class="language-shell">npm start
-</code></pre>
-
-<p>commands to start the node server of the application. It won’t adapt to the changes happen in the build file. So we have to take care of that too. We can use <a href="https://www.npmjs.com/package/nodemon" target="_blank">nodemon</a> npm package to listen for the file changes on the server.  It can be simply installed as follows.</p>
-
-<pre><code class="language-shell">npm install -g nodemon
-</code></pre>
-
-<p>First change the current directory to the server directory of the application. Then start a new window using screen.  (Normally we use “screen” tool to start services on the server. it lets us to keep running the service while we doing something else on the server. here is a <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-screen-on-an-ubuntu-cloud-server" target="_blank">guideline</a> from digitalOcean for screen tool) .</p>
-
-<pre><code class="language-shell">screen
-</code></pre>
-
-<pre><code class="language-shell">nodemon server.js
-</code></pre>
-
-<p>Now press to leave the screen.</p>
-
-<pre><code class="language-shell">CTRL + a + d
-</code></pre>
-
-<h2 id="what-s-more">What’s More?</h2>
-
-<p>This seems easy and simple. But there are few drawbacks with this approach. Yet we can address them efficiently.</p>
-
-<p>The build that we deploy on the live environment is not properly tested.</p>
-
-<ul>
-<li>Building the build directory only on a <strong>test environment</strong> when a commit comes.</li>
-<li>Testing the build using “npm test”. (we can write scripts for testing under “test” script in package.json)</li>
-<li>If it passes put deploy it to the production(simply coping), else reject.
-The server restarts each and every time when we are committing, even for minor commits!  We can implement a method to filter out the commits  notification and build for only specific commits.</li>
-</ul>
-
-<p>We don’t manages the releases here. That is really bad practise to do if we are deploy something serious. Deployment automation tools like Ansible, Chef could help for these problems.</p>
-
-<p>That’s it for this post. Hope you learned something out of this.  Thanks for reading.</p>
 
     </div>
 
@@ -751,7 +574,7 @@ The server restarts each and every time when we are committing, even for minor c
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/ci/cd-github-codes-demo/">CI/CD, Github, Codes Demo</a>
+  <a class="badge badge-light" href="/tags/ds-python-ml/">DS, Python, ML</a>
   
 </div>
 
@@ -768,7 +591,7 @@ The server restarts each and every time when we are committing, even for minor c
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/ci-cd/&amp;text=Continuous%20Integration%20and%20Deploying%20with%20Github%20Webhooks" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/post/ds/&amp;text=Helping%20a%20Gym%20Rat%20to%20choose%20a%20Neighbourhood%20to%20live%20in%20Manhattan" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -781,7 +604,7 @@ The server restarts each and every time when we are committing, even for minor c
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/ci-cd/&amp;t=Continuous%20Integration%20and%20Deploying%20with%20Github%20Webhooks" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/post/ds/&amp;t=Helping%20a%20Gym%20Rat%20to%20choose%20a%20Neighbourhood%20to%20live%20in%20Manhattan" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
@@ -794,7 +617,7 @@ The server restarts each and every time when we are committing, even for minor c
       
       
       <li>
-        <a href="mailto:?subject=Continuous%20Integration%20and%20Deploying%20with%20Github%20Webhooks&amp;body=/post/ci-cd/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Helping%20a%20Gym%20Rat%20to%20choose%20a%20Neighbourhood%20to%20live%20in%20Manhattan&amp;body=/post/ds/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -807,7 +630,7 @@ The server restarts each and every time when we are committing, even for minor c
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/ci-cd/&amp;title=Continuous%20Integration%20and%20Deploying%20with%20Github%20Webhooks" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/post/ds/&amp;title=Helping%20a%20Gym%20Rat%20to%20choose%20a%20Neighbourhood%20to%20live%20in%20Manhattan" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -820,7 +643,7 @@ The server restarts each and every time when we are committing, even for minor c
       
       
       <li>
-        <a href="https://web.whatsapp.com/send?text=Continuous%20Integration%20and%20Deploying%20with%20Github%20Webhooks%20/post/ci-cd/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="https://web.whatsapp.com/send?text=Helping%20a%20Gym%20Rat%20to%20choose%20a%20Neighbourhood%20to%20live%20in%20Manhattan%20/post/ds/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -833,7 +656,7 @@ The server restarts each and every time when we are committing, even for minor c
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/ci-cd/&amp;title=Continuous%20Integration%20and%20Deploying%20with%20Github%20Webhooks" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/post/ds/&amp;title=Helping%20a%20Gym%20Rat%20to%20choose%20a%20Neighbourhood%20to%20live%20in%20Manhattan" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>

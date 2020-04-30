@@ -5,12 +5,26 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 20 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 30 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Helping a Gym Rat to choose a Neighbourhood to live in Manhattan</title>
+      <link>/post/ds/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/ds/</guid>
+      <description>&lt;p&gt;The article has been posted on Medium Platform. It has two parts. Please read,&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Part 1 - &lt;a href=&#34;https://medium.com/@Sudeepa/helping-a-gym-rat-to-choose-a-neighborhood-to-live-in-manhattan-part-1-1cac158c0cb4&#34; target=&#34;_blank&#34;&gt;Helping a Gym Rat to choose a Neighbourhood to live in Manhattan - Part 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Part 2 -&lt;a href=&#34;https://medium.com/@Sudeepa/helping-a-gym-rat-to-choose-a-neighborhood-to-live-in-manhattan-part-2-15511aee622f&#34; target=&#34;_blank&#34;&gt;Helping a Gym Rat to choose a Neighbourhood to live in Manhattan - Part 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>Why Your Own Blog?</title>
